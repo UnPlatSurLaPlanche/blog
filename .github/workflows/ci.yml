@@ -49,3 +49,6 @@ jobs:
 
       - name: Run tests 🧪
         run: yarn test
+
+      - name: Run generate 🛠
+        run: yarn generate

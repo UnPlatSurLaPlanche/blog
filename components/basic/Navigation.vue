@@ -1,12 +1,14 @@
 <template>
   <nav class="flex justify-center w-full h-16 top-0">
-    <div class="flex items-center w-4/5 shadow-md rounded-b-full">
+    <div class="flex items-center w-4/5 shadow-md rounded-b-full bg-white">
       <div class="flex justify-center">
         <Logo />
       </div>
       <div class="flex justify-center w-4/5">
-        <div class="flex items-center w-auto space-x-12 font-semibold">
-          <nuxt-link to="" class="text-primary hover:text-opacity-50"
+        <div class="flex items-center w-auto space-x-12 font-normal">
+          <nuxt-link
+            to=""
+            class="text-primary hover:text-opacity-50 font-semibold"
             >Accueil</nuxt-link
           >
           <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
@@ -19,12 +21,12 @@
             >Carnet d'adresses</nuxt-link
           >
           <div
-            class="flex items-center p-3 rounded-full bg-primary bg-opacity-25 hover:bg-opacity-50 cursor-pointer"
+            class="flex items-center p-2 rounded-full bg-primary bg-opacity-25 hover:bg-opacity-50 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20.733 20.728"
-              class="text-tertiary fill-current w-5"
+              class="text-tertiary fill-current w-4"
             >
               <path
                 id="instagram-brands"

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Navigation />
+    <Navigation class="fixed z-20" />
     <main>
       <Nuxt />
     </main>
-    <Footer />
+    <Footer class="z-20" />
   </div>
 </template>
 <script>

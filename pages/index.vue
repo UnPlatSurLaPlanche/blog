@@ -3,7 +3,7 @@
     <div class="relative flex w-full justify-center pt-12">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-current text-primary absolute w-5/12 top-0 left-0"
+        class="fill-current text-primary absolute w-3/4 sm:w-5/12 top-0 left-0"
         viewBox="0 0 865.557 850.893"
       >
         <path
@@ -14,35 +14,39 @@
           opacity="0.1"
         />
       </svg>
-      <div class="flex items-center w-4/6 mt-12 z-10">
-        <div class="w-1/2">
+      <div
+        class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 z-10"
+      >
+        <div class="w-full sm:w-1/2 px-6 sm:px-0 mb-16 sm:mb-0">
           <h2 class="text-primary text-4xl">Des plats savoureux</h2>
           <h3 class="text-secondary text-2xl">Et facile à réaliser</h3>
-          <p class="text-dark-200 mt-8 w-3/5 text-xs">
+          <p class="text-dark-200 mt-8 w-full sm:w-3/5 text-xs">
             Déposez les scones sur une plaque, badigeonnez le dessus de jaune
             d’œuf délayé avec le lait.Faites cuire une vingtaine de minutes,
             jusqu’à ce que les scones soient bien dorés.
           </p>
 
-          <button
-            class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg py-3 px-6 shadow-md mt-8"
-          >
-            Découvrez nos recettes
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex w-full justify-center sm:justify-start">
+            <button
+              class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
             >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+              Découvrez nos recettes
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 px-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -156,8 +160,12 @@
       </div>
     </div>
     <div class="relative flex w-full justify-center my-12">
-      <div class="flex items-center w-4/6 mt-12">
-        <div v-for="post in posts" :key="post.id" class="w-1/3 px-4">
+      <div class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12">
+        <div
+          v-for="post in posts"
+          :key="post.id"
+          class="w-full sm:w-1/3 px-4 space-y-4 sm:space-y-0"
+        >
           <img
             :src="post.cover"
             class="bg-primary object-cover h-40 rounded-xl w-full"

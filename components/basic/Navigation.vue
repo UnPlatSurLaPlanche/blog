@@ -1,10 +1,10 @@
 <template>
   <nav class="flex justify-center w-full h-16 top-0">
-    <div class="flex items-center w-4/5 shadow-md rounded-b-full bg-white">
-      <div class="flex justify-center">
-        <Logo />
-      </div>
-      <div class="flex justify-center w-4/5">
+    <div
+      class="flex items-center justify-between sm:justify-around px-6 sm:px-0 w-full sm:w-4/5 shadow-md rounded-none sm:rounded-b-full bg-white"
+    >
+      <Logo />
+      <div class="sm:flex justify-center hidden">
         <div class="flex items-center w-auto space-x-12 font-normal">
           <nuxt-link
             to=""
@@ -36,6 +36,37 @@
             </svg>
           </div>
         </div>
+      </div>
+      <div class="block sm:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-current text-primary w-8 h-8"
+          viewBox="0 0 33.495 28.71"
+        >
+          <g id="menu" transform="translate(-3 -4)">
+            <path
+              id="Tracé_102"
+              data-name="Tracé 102"
+              d="M3,6.392A2.393,2.393,0,0,1,5.392,4H34.1a2.392,2.392,0,0,1,0,4.785H5.392A2.393,2.393,0,0,1,3,6.392Z"
+              transform="translate(0 0)"
+              fill-rule="evenodd"
+            />
+            <path
+              id="Tracé_103"
+              data-name="Tracé 103"
+              d="M3,11.392A2.393,2.393,0,0,1,5.392,9H34.1a2.392,2.392,0,0,1,0,4.785H5.392A2.392,2.392,0,0,1,3,11.392Z"
+              transform="translate(0 6.962)"
+              fill-rule="evenodd"
+            />
+            <path
+              id="Tracé_104"
+              data-name="Tracé 104"
+              d="M3,16.392A2.392,2.392,0,0,1,5.392,14H34.1a2.392,2.392,0,1,1,0,4.785H5.392A2.392,2.392,0,0,1,3,16.392Z"
+              transform="translate(0 13.925)"
+              fill-rule="evenodd"
+            />
+          </g>
+        </svg>
       </div>
     </div>
   </nav>

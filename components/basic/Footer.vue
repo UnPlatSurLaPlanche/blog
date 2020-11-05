@@ -2,13 +2,13 @@
   <footer class="w-full bottom-0">
     <section class="flex justify-center w-full h-40 bg-dark-300">
       <div class="flex justify-around w-4/5 mt-6">
-        <div class="w-1/5">
+        <div class="hidden sm:block w-1/5">
           <LogoBlackWhite />
           <p class="mt-4 text-white text-xs">
             Bien manger c'est le début du bonheur
           </p>
         </div>
-        <div class="w-1/5">
+        <div class="w-1/2 sm:w-1/5">
           <h3 class="text-primary font-semibold text-lg">Navigation</h3>
           <div class="flex flex-col">
             <nuxt-link to="" class="text-sm text-white hover:text-opacity-50"
@@ -22,7 +22,7 @@
             >
           </div>
         </div>
-        <div class="flex flex-col items-center w-1/5">
+        <div class="flex flex-col items-center w-1/2 sm:w-1/5">
           <h3 class="text-primary font-semibold text-lg">Suivez-nous !</h3>
           <div
             class="flex items-center w-10 h-10 p-3 mt-2 rounded-full bg-dark-200 bg-opacity-25 hover:bg-opacity-50 cursor-pointer"

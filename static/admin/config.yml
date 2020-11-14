@@ -18,3 +18,4 @@ collections:
       - { label: 'Ingredients', name: 'ingredients', widget: 'markdown' }
       - { label: 'Steps', name: 'steps', widget: 'markdown' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }

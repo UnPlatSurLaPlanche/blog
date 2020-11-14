@@ -17,5 +17,6 @@ collections:
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Ingredients', name: 'ingredients', widget: 'markdown' }
       - { label: 'Steps', name: 'steps', widget: 'markdown' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Times', name: 'times', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }

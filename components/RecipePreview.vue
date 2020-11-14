@@ -1,10 +1,10 @@
 <template>
   <div class="w-full sm:w-1/3 px-4">
     <img
-      :src="post.cover"
+      :src="post.thumbnail"
       class="bg-primary object-cover h-40 rounded-xl w-full"
     />
-    <p class="text-secondary font-semibold mt-2">{{ post.name }}</p>
+    <p class="text-secondary font-semibold mt-2">{{ post.title }}</p>
     <div class="flex items-center space-x-2">
       <svg
         id="Icon_ionic-md-time"

@@ -163,7 +163,11 @@
       <div
         class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 space-y-4 sm:space-y-0"
       >
-        <RecipePreview v-for="post in posts" :key="post.id" :post="post" />
+        <RecipePreview
+          v-for="recette in recettes"
+          :key="recette.id"
+          :post="recette"
+        />
       </div>
     </div>
   </div>
@@ -172,11 +176,10 @@
 <script>
 export default {
   name: 'Accueil',
-  head() {
+  async asyncData({ $content }) {
+    const recettes = await $content('recettes').fetch()
     return {
-      script: [
-        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-      ],
+      recettes,
     }
   },
   data: () => ({
@@ -204,5 +207,12 @@ export default {
       },
     ],
   }),
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+      ],
+    }
+  },
 }
 </script>

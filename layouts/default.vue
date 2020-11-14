@@ -4,7 +4,7 @@
     <main>
       <Nuxt />
     </main>
-    <Footer class="z-20" />
+    <Footer class="z-20 mt-20" />
   </div>
 </template>
 <script>

@@ -7,14 +7,14 @@
       <div class="sm:flex justify-center hidden">
         <div class="flex items-center w-auto space-x-12 font-normal">
           <nuxt-link
-            to=""
+            to="/"
             class="text-primary hover:text-opacity-50 font-semibold"
             >Accueil</nuxt-link
           >
-          <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
+          <nuxt-link to="/recettes" class="text-dark-200 hover:text-opacity-50"
             >Recettes</nuxt-link
           >
-          <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
+          <nuxt-link to="/blog" class="text-dark-200 hover:text-opacity-50"
             >Blog</nuxt-link
           >
           <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"

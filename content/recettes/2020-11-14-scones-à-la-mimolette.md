@@ -37,7 +37,8 @@ steps: >-
   Déposez les scones sur une plaque, badigeonnez le dessus de jaune d’œuf délayé avec le lait.
 
   Faites cuire une vingtaine de minutes, jusqu’à ce que les scones soient bien dorés.
-date: 2020-11-14T20:41:42.305Z
+times: "30"
 tags:
   - courge;dessert
+date: 2020-11-14T20:41:42.305Z
 ---

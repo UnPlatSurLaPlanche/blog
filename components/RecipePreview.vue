@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sm:w-1/3 px-4">
+  <nuxt-link :to="`recettes/${post.slug}`" class="w-full sm:w-1/3 px-4">
     <img
       :src="post.thumbnail"
       class="bg-primary object-cover h-40 rounded-xl w-full"
@@ -29,7 +29,7 @@
 
       <p class="text-primary">{{ post.times }} min</p>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 <script>
 export default {

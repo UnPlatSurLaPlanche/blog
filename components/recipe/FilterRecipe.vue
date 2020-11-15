@@ -44,7 +44,7 @@
       >
         <ul
           v-for="filter in filters"
-          :key="filter"
+          :key="filter.label"
           tabindex="-1"
           role="listbox"
           aria-labelledby="listbox-label"

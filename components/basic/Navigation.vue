@@ -14,7 +14,7 @@
           <nuxt-link to="/recettes" class="text-dark-200 hover:text-opacity-50"
             >Recettes</nuxt-link
           >
-          <nuxt-link to="/blog" class="text-dark-200 hover:text-opacity-50"
+          <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
             >Blog</nuxt-link
           >
           <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"

@@ -61,7 +61,11 @@
                 height="100%"
                 viewBox="0 0 1080 720"
               >
-                <image width="1080" height="720" :href="posts[2].cover" />
+                <image
+                  width="1080"
+                  height="720"
+                  :href="require('~/assets/img/image3.jpg')"
+                />
               </pattern>
               <pattern
                 id="pattern-2"
@@ -70,7 +74,11 @@
                 height="100%"
                 viewBox="0 0 1080 857"
               >
-                <image width="1080" height="720" :href="posts[0].cover" />
+                <image
+                  width="1080"
+                  height="720"
+                  :href="require('~/assets/img/image1.jpg')"
+                />
               </pattern>
               <pattern
                 id="pattern-3"
@@ -79,7 +87,11 @@
                 height="100%"
                 viewBox="0 0 1080 1531"
               >
-                <image width="1080" height="1531" :href="posts[1].cover" />
+                <image
+                  width="1080"
+                  height="1531"
+                  :href="require('~/assets/img/image2.jpg')"
+                />
               </pattern>
             </defs>
             <g
@@ -182,31 +194,7 @@ export default {
       recettes,
     }
   },
-  data: () => ({
-    posts: [
-      {
-        id: 0,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image1.jpg'),
-      },
-      {
-        id: 1,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image2.jpg'),
-      },
-      {
-        id: 2,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image3.jpg'),
-      },
-    ],
-  }),
+
   head() {
     return {
       script: [

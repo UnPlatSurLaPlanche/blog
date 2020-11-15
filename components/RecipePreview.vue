@@ -5,6 +5,7 @@
   >
     <img
       :src="post.thumbnail"
+      alt=""
       class="bg-primary object-cover h-40 rounded-xl w-full"
     />
     <p class="text-secondary font-semibold mt-2">{{ post.title }}</p>

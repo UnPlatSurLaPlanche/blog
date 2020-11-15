@@ -16,10 +16,10 @@
       </svg>
 
       <div class="z-10">
-        <div class="flex flex-col items-center justify-center w-full">
-          <div class="w-2/3">
+        <div class="flex flex-col items-center justify-center w-full px-4">
+          <div class="w-full sm:w-2/3">
             <div class="my-16">
-              <h1 class="text-5xl text-gray-900 text-left">
+              <h1 class="text-4xl sm:text-5xl text-gray-900 text-left">
                 {{ page.title }}
               </h1>
               <svg
@@ -51,11 +51,11 @@
               </h3>
             </div>
             <div class="border p-6 border-primary-light">
-              <div class="flex flex-wrap w-2/3">
+              <div class="flex flex-wrap w-full sm:w-2/3">
                 <div
                   v-for="ingredient in ingredients"
                   :key="ingredient"
-                  class="w-1/2 py-1"
+                  class="w-full sm:w-1/2 py-1"
                 >
                   <div class="flex items-center space-x-4">
                     <div class="w-2 h-2 bg-primary"></div>
@@ -74,8 +74,8 @@
                 Déroulé
               </h3>
             </div>
-            <div>
-              <p class="whitespace-pre text-dark-200">{{ page.steps }}</p>
+            <div class="w-full">
+              <p class="whitespace-pre-wrap text-dark-200">{{ page.steps }}</p>
             </div>
           </div>
         </div>

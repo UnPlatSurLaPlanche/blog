@@ -10,16 +10,19 @@
         </div>
         <div class="w-1/2 sm:w-1/5">
           <h3 class="text-primary font-semibold text-lg">Navigation</h3>
-          <div class="flex flex-col">
-            <nuxt-link to="" class="text-sm text-white hover:text-opacity-50"
-              >Recettes</nuxt-link
+          <div
+            v-for="link in menus"
+            :key="link.name"
+            class="text-sm text-white hover:text-opacity-50"
+          >
+            <nuxt-link
+              class=""
+              active-class="text-primary hover:text-opacity-50"
+              :to="link.path"
+              :exact="link.path === '/' ? true : false"
             >
-            <nuxt-link to="" class="text-sm text-white hover:text-opacity-50"
-              >Blog</nuxt-link
-            >
-            <nuxt-link to="" class="text-sm text-white hover:text-opacity-50"
-              >Carnet d'adresses</nuxt-link
-            >
+              {{ link.name }}
+            </nuxt-link>
           </div>
         </div>
         <div class="flex flex-col items-center w-1/2 sm:w-1/5">
@@ -52,5 +55,29 @@
 <script>
 export default {
   name: 'Footer',
+  data: () => ({
+    menus: [
+      {
+        name: 'Accueil',
+        path: '/',
+        strict: true,
+      },
+      {
+        name: 'Recettes',
+        path: '/recettes',
+        strict: false,
+      },
+      {
+        name: 'Blog',
+        path: '/blog',
+        strict: false,
+      },
+      {
+        name: "Carnet d'adresses",
+        path: '/adresses',
+        strict: false,
+      },
+    ],
+  }),
 }
 </script>

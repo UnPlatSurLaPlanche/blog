@@ -6,20 +6,20 @@
       <Logo />
       <div class="sm:flex justify-center hidden">
         <div class="flex items-center w-auto space-x-12 font-normal">
-          <nuxt-link
-            to="/"
-            class="text-primary hover:text-opacity-50 font-semibold"
-            >Accueil</nuxt-link
+          <div
+            v-for="link in menus"
+            :key="link.name"
+            class="text-dark-200 hover:text-opacity-50"
           >
-          <nuxt-link to="/recettes" class="text-dark-200 hover:text-opacity-50"
-            >Recettes</nuxt-link
-          >
-          <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
-            >Blog</nuxt-link
-          >
-          <nuxt-link to="" class="text-dark-200 hover:text-opacity-50"
-            >Carnet d'adresses</nuxt-link
-          >
+            <nuxt-link
+              class=""
+              active-class="text-primary hover:text-opacity-50 font-semibold"
+              :to="link.path"
+              :exact="link.path === '/' ? true : false"
+            >
+              {{ link.name }}
+            </nuxt-link>
+          </div>
           <div
             class="flex items-center p-2 rounded-full bg-primary bg-opacity-25 hover:bg-opacity-50 cursor-pointer"
           >
@@ -74,5 +74,29 @@
 <script>
 export default {
   name: 'Navigation',
+  data: () => ({
+    menus: [
+      {
+        name: 'Accueil',
+        path: '/',
+        strict: true,
+      },
+      {
+        name: 'Recettes',
+        path: '/recettes',
+        strict: false,
+      },
+      {
+        name: 'Blog',
+        path: '/blog',
+        strict: false,
+      },
+      {
+        name: "Carnet d'adresses",
+        path: '/adresses',
+        strict: false,
+      },
+    ],
+  }),
 }
 </script>

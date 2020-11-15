@@ -39,6 +39,7 @@ steps: >-
   Faites cuire une vingtaine de minutes, jusqu’à ce que les scones soient bien dorés.
 times: "30"
 tags:
-  - courge;dessert
+  - courge
+  - dessert
 date: 2020-11-14T20:41:42.305Z
 ---

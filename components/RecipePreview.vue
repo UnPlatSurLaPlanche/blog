@@ -1,5 +1,8 @@
 <template>
-  <nuxt-link :to="`recettes/${post.slug}`" class="w-full sm:w-1/3 px-4">
+  <nuxt-link
+    :to="`recettes/${post.slug}`"
+    class="w-full sm:w-1/3 px-4 transform scale-100 hover:scale-110 transition duration-200"
+  >
     <img
       :src="post.thumbnail"
       class="bg-primary object-cover h-40 rounded-xl w-full"

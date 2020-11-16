@@ -68,14 +68,25 @@
             </div>
 
             <div class="flex my-4 mt-12">
-              <h3
-                class="bg-primary-light text-primary font-semibold rounded-xl py-2 px-4"
-              >
-                Déroulé
-              </h3>
+              <h3 class="text-dark-200 font-semibold text-xl">Préparation</h3>
             </div>
             <div class="w-full">
-              <p class="whitespace-pre-wrap text-dark-200">{{ page.steps }}</p>
+              <div
+                v-for="(step, index) in page.steps"
+                :key="index"
+                class="mb-10"
+              >
+                <div class="flex">
+                  <h4
+                    class="bg-primary-light text-primary font-semibold rounded-lg py-1 px-3"
+                  >
+                    Étape {{ index }}
+                  </h4>
+                </div>
+                <p class="whitespace-pre-line text-dark-200">
+                  {{ step.content }}
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -37,6 +37,11 @@ steps: >-
   Déposez les scones sur une plaque, badigeonnez le dessus de jaune d’œuf délayé avec le lait.
 
   Faites cuire une vingtaine de minutes, jusqu’à ce que les scones soient bien dorés.
+Steps:
+  - content: >-
+      Préchauffez le four à 180°. 
+
+      Dans un grand saladier, mélangez la farine, la levure,le sel et le paprika.
 times: "30"
 tags:
   - courge

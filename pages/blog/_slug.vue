@@ -75,50 +75,10 @@
               </svg>
             </div>
 
-            <div class="flex my-4 mt-20">
-              <h3
-                class="bg-primary-light text-primary font-semibold rounded-xl py-2 px-4"
-              >
-                Ingrédients
-              </h3>
-            </div>
-            <div class="border p-6 border-primary-light">
-              <div class="flex flex-wrap w-full sm:w-2/3">
-                <div
-                  v-for="ingredient in ingredients"
-                  :key="ingredient"
-                  class="w-full sm:w-1/2 py-1"
-                >
-                  <div class="flex items-center space-x-4">
-                    <div class="w-2 h-2 bg-primary"></div>
-                    <p class="text-dark-200">
-                      {{ ingredient }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex my-4 mt-12">
-              <h3 class="text-dark-200 font-semibold text-xl">Préparation</h3>
-            </div>
             <div class="w-full">
-              <div
-                v-for="(step, index) in page.steps"
-                :key="index"
-                class="mb-10"
-              >
-                <div class="flex">
-                  <h4
-                    class="bg-primary-light text-primary font-semibold rounded-lg py-1 px-3"
-                  >
-                    Étape {{ index }}
-                  </h4>
-                </div>
-                <p class="whitespace-pre-line text-dark-200">
-                  {{ step.content }}
-                </p>
-              </div>
+              <p class="whitespace-pre-line text-dark-200">
+                {{ step.preview }}
+              </p>
             </div>
           </div>
         </div>
@@ -131,7 +91,7 @@
 export default {
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(`recettes/${slug}`)
+    const page = await $content(`blog/${slug}`)
       .fetch()
       .catch(() => {
         error({ statusCode: 404, message: 'Page not found :/' })
@@ -139,13 +99,6 @@ export default {
     return {
       page,
     }
-  },
-  computed: {
-    ingredients() {
-      return this.page.ingredients.split('*').filter(function (el) {
-        return el
-      })
-    },
   },
 }
 </script>

@@ -3,7 +3,9 @@
     <div
       class="flex items-center justify-between sm:justify-around px-6 sm:px-0 w-full sm:w-4/5 shadow-md rounded-none sm:rounded-b-full bg-white"
     >
-      <Logo />
+      <nuxt-link to="/">
+        <Logo />
+      </nuxt-link>
       <div class="sm:flex justify-center hidden">
         <div class="flex items-center w-auto space-x-12 font-normal">
           <div

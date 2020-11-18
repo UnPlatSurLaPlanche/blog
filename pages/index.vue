@@ -27,7 +27,8 @@
           </p>
 
           <div class="flex w-full justify-center sm:justify-start">
-            <button
+            <nuxt-link
+              to="/recettes"
               class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
             >
               Découvrez nos recettes
@@ -43,7 +44,7 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </button>
+            </nuxt-link>
           </div>
         </div>
         <div class="w-full sm:w-1/2 px-6">

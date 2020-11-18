@@ -18,7 +18,15 @@
         <LogoCard class="w-1/3" />
       </div>
     </div>
-    <div></div>
+    <section class="flex justify-center w-full mt-10">
+      <div class="w-3/4">
+        <PostPreview
+          v-for="post in posts"
+          :key="post.id"
+          :post="post"
+        ></PostPreview>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -29,12 +37,12 @@ export default {
     posts: [
       {
         id: 0,
-        name: 'Comment bien casser des oeufs',
+        title: 'Comment bien casser des oeufs',
         date: '12/10/2020',
-        description:
+        preview:
           'Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l’alcôve ovoïde, où les bûches se consument dans l’âtre, ce qui lui permet de penser à la cænogenèse de l’être dont …',
         likes: 323,
-        cover: require('~/assets/img/image1.jpg'),
+        thumbnail: require('~/assets/img/image1.jpg'),
       },
     ],
   }),

@@ -18,6 +18,7 @@
     "@nuxtjs/pwa": "^3.0.2",
     "commitizen": "^4.2.2",
     "core-js": "^3.6.5",
+    "netlify-cms-app": "^2.13.3",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {

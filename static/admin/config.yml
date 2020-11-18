@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: master
 
+locale: 'fr'
+logo_url: https://youthful-curie-eca22c.netlify.app/icon.png
+
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'

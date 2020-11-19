@@ -2,7 +2,7 @@
 title: Comment bien casser des oeufs
 thumbnail: /images/uploads/wenping-wang-gjf9hpsz-pu-unsplash.jpg
 summary: >-
-
+  
 
   Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde, 
 
@@ -17,7 +17,6 @@ tags:
   - oeufs
 date: 2020-11-19T19:37:49.969Z
 ---
-
 # Voyez ce jeu exquis wallon, de graphie en kit mais bref
 
 Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l"alcôve ovoïde,
@@ -47,8 +46,8 @@ question dans la cause ambiguë entendue à Moÿ, dans un capharnaüm qui, pense
 diminue çà et là la qualité de son œuvre. Prouvez, beau juge, que le fameux sandwich au
 yak tue. L"île exiguë, Où l"obèse jury mûr Fête l"haï volapük:
 
-- Âne ex æquo au whist,
-- Ôtez ce vœu déçu,
-- Vieux pelage que je modifie : breitschwanz ou yak ?
+* Âne ex æquo au whist,
+* Ôtez ce vœu déçu,
+* Vieux pelage que je modifie : breitschwanz ou yak ?
 
-![](/images/uploads/wenping-wang-gjf9hpsz-pu-unsplash.jpg)
+![ ](/images/uploads/easter-2168521_1920.jpg "eggs")

@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="`recettes/${post.slug}`"
+    :to="`/recettes/${post.slug}`"
     class="w-full sm:w-1/3 px-4 transform scale-100 hover:opacity-75 opacity-100 sm:hover:opacity-100 sm:hover:scale-110 transition duration-300 ease-in-out"
   >
     <img

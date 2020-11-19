@@ -37,7 +37,7 @@
         </div>
         <div class="flex justify-end">
           <nuxt-link
-            :to="`blog/${post.slug}`"
+            :to="`/blog/${post.slug}`"
             class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6"
             >Lire la suite
             <svg

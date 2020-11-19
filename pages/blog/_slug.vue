@@ -77,7 +77,7 @@
 
             <div class="w-full">
               <p class="whitespace-pre-line text-dark-200">
-                {{ step.preview }}
+                {{ page.summary }}
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@
 export default {
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(`blog/${slug}`)
+    const page = await $content(`articles/${slug}`)
       .fetch()
       .catch(() => {
         error({ statusCode: 404, message: 'Page not found :/' })

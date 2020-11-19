@@ -27,7 +27,7 @@
                 width="106"
                 height="13"
                 viewBox="0 0 106 13"
-                class="fill-current text-primary"
+                class="fill-current text-primary mt-2"
               >
                 <rect
                   id="Rectangle_14"

@@ -23,8 +23,8 @@
         </p>
       </div>
       <div class="w-10/12">
-        <p class="my-3">
-          {{ post.preview }}
+        <p class="my-3 text-dark-200">
+          {{ post.summary }}
         </p>
         <div class="flex justify-end">
           <nuxt-link

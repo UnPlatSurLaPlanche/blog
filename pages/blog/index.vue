@@ -33,18 +33,21 @@
 <script>
 export default {
   name: 'Blog',
-  data: () => ({
-    posts: [
-      {
-        id: 0,
-        title: 'Comment bien casser des oeufs',
-        date: '12/10/2020',
-        preview:
-          'Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de l’alcôve ovoïde, où les bûches se consument dans l’âtre, ce qui lui permet de penser à la cænogenèse de l’être dont …',
-        likes: 323,
-        thumbnail: require('~/assets/img/image1.jpg'),
-      },
-    ],
-  }),
+  async asyncData({ $content }) {
+    const posts = await $content('articles').fetch()
+
+    const postsTags = (await $content('articles').only(['tags']).fetch()).map(
+      (item) => {
+        return item.tags
+      }
+    )
+
+    const tags = [...new Set([].concat.apply([], postsTags))]
+
+    return {
+      posts,
+      tags,
+    }
+  },
 }
 </script>

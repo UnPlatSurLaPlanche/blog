@@ -8,14 +8,15 @@ logo_url: https://youthful-curie-eca22c.netlify.app/icon.png
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'
 public_folder: '/images/uploads'
+
 collections:
-  - name: 'recettes' # Used in routes, e.g., /admin/collections/blog
-    label: 'Recettes' # Used in the UI
-    folder: 'content/recettes' # The path to the folder where the documents are stored
+  - name: 'recettes'
+    label: 'Recettes'
+    folder: 'content/recettes'
     format: 'frontmatter'
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Ingrédients', name: 'ingredients', widget: 'markdown' }
@@ -26,5 +27,24 @@ collections:
           - { label: Contenu, name: content, widget: markdown }
           - { label: Image, name: thumbnail, widget: image, required: false }
       - { label: 'Temps de préparation', name: 'times', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Date de publication', name: 'date', widget: 'datetime' }
+
+ - name: 'blog'
+    label: 'Articles'
+    folder: 'content/articles'
+    format: 'frontmatter'
+    create: true 
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' 
+    fields: 
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Résumé', name: 'summary', widget: 'markdown' }
+      - label: Contenu
+        name: content
+        widget: list
+        fields:
+          - { label: Paragraphe, name: paragraphe, widget: markdown }
+          - { label: Image, name: thumbnail, widget: image, required: false }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Date de publication', name: 'date', widget: 'datetime' }

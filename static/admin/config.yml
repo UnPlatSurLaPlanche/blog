@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-
+editor:
+  preview: false
 locale: 'fr'
 logo_url: https://youthful-curie-eca22c.netlify.app/icon.png
 
@@ -25,7 +26,6 @@ collections:
         widget: list
         fields:
           - { label: Contenu, name: content, widget: markdown }
-          - { label: Image, name: thumbnail, widget: image, required: false }
       - { label: 'Temps de préparation', name: 'times', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Date de publication', name: 'date', widget: 'datetime' }
@@ -40,11 +40,6 @@ collections:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Résumé', name: 'summary', widget: 'markdown' }
-      - label: Contenu
-        name: content
-        widget: list
-        fields:
-          - { label: Paragraphe, name: paragraphe, widget: markdown }
-          - { label: Image, name: thumbnail, widget: image, required: false }
+      - { label: 'Contenu', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Date de publication', name: 'date', widget: 'datetime' }

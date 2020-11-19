@@ -19,7 +19,9 @@
         <div class="flex flex-col items-center justify-center w-full px-4">
           <div class="w-full sm:w-2/3">
             <div class="my-16">
-              <h1 class="text-4xl sm:text-5xl text-secondary text-left">
+              <h1
+                class="text-4xl sm:text-6xl font-extrabold text-secondary text-left"
+              >
                 {{ page.title }}
               </h1>
               <svg
@@ -27,7 +29,7 @@
                 width="106"
                 height="13"
                 viewBox="0 0 106 13"
-                class="fill-current text-primary"
+                class="fill-current text-primary mt-2"
               >
                 <rect
                   id="Rectangle_14"
@@ -40,7 +42,7 @@
             </div>
             <div class="relative">
               <img
-                class="rounded-2xl h-64 w-full object-cover"
+                class="rounded-2xl w-full object-cover"
                 :src="page.thumbnail"
               />
               <svg
@@ -74,11 +76,11 @@
                 </g>
               </svg>
             </div>
-
-            <div class="w-full">
-              <p class="whitespace-pre-line text-dark-200">
-                {{ page.summary }}
-              </p>
+            <div class="flex justify-center w-full mt-20">
+              <nuxt-content
+                class="prose prose-lg text-gray-500"
+                :document="page"
+              />
             </div>
           </div>
         </div>
@@ -102,3 +104,28 @@ export default {
   },
 }
 </script>
+<style>
+.nuxt-content h1,
+.nuxt-content h2,
+.nuxt-content h3,
+.nuxt-content h4 {
+  @apply text-secondary;
+}
+
+.nuxt-content h1 {
+  @apply text-5xl font-bold;
+}
+.nuxt-content h2 {
+  @apply text-4xl;
+}
+.nuxt-content h3 {
+  @apply text-3xl;
+}
+.nuxt-content h4 {
+  @apply text-2xl;
+}
+
+.nuxt-content img {
+  @apply rounded-xl;
+}
+</style>

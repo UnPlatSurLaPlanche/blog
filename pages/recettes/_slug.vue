@@ -40,7 +40,7 @@
             </div>
             <div class="relative">
               <img
-                class="rounded-2xl h-64 w-full object-cover"
+                class="rounded-2xl w-full object-cover"
                 :src="page.thumbnail"
               />
               <svg
@@ -91,7 +91,7 @@
                 >
                   <div class="flex items-center space-x-4">
                     <div class="w-2 h-2 bg-primary"></div>
-                    <p class="text-dark-200">
+                    <p class="text-gray-500">
                       {{ ingredient }}
                     </p>
                   </div>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="flex my-4 mt-12">
-              <h3 class="text-dark-200 font-semibold text-xl">Préparation</h3>
+              <h3 class="text-gray-500 font-semibold text-xl">Préparation</h3>
             </div>
             <div class="w-full">
               <div
@@ -115,7 +115,7 @@
                     Étape {{ index }}
                   </h4>
                 </div>
-                <p class="whitespace-pre-line text-dark-200">
+                <p class="whitespace-pre-line text-gray-500">
                   {{ step.content }}
                 </p>
               </div>

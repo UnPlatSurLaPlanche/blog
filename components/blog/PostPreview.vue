@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full px-4 bg-white">
-    <div class="w-3/5">
+    <div class="w-full sm:w-3/5">
       <p class="text-secondary text-3xl font-semibold mt-2">
         {{ post.title }}
       </p>
@@ -19,17 +19,26 @@
           />
         </svg>
         <p class="text-primary text-sm font-semibold">
-          {{ post.date }}
+          {{ formatedDate(post.date) }}
         </p>
       </div>
-      <div class="w-10/12">
-        <p class="my-3 text-dark-200">
-          {{ post.summary }}
-        </p>
+      <div class="w-full sm:w-10/12">
+        <div class="flex items-center sm:block">
+          <p class="my-3 text-gray-500 w-3/5 sm:w-full pr-4 sm:pr-0">
+            {{ post.summary }}
+          </p>
+          <div class="sm:hidden block w-2/5">
+            <img
+              :src="post.thumbnail"
+              alt=""
+              class="bg-primary object-cover h-48 rounded-xl"
+            />
+          </div>
+        </div>
         <div class="flex justify-end">
           <nuxt-link
             :to="`blog/${post.slug}`"
-            class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6"
+            class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6"
             >Lire la suite
             <svg
               class="w-6 h-6 transform -rotate-90"
@@ -46,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="w-2/5">
+    <div class="hidden sm:block sm:w-2/5">
       <img
         :src="post.thumbnail"
         alt=""
@@ -56,6 +65,8 @@
   </div>
 </template>
 <script>
+import { format } from 'date-fns'
+
 export default {
   props: {
     post: {
@@ -63,6 +74,11 @@ export default {
       default() {
         return {}
       },
+    },
+  },
+  methods: {
+    formatedDate(date) {
+      return format(new Date(date), 'dd/MM/yyyy')
     },
   },
 }

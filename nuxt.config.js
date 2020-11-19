@@ -52,4 +52,16 @@ export default {
   content: {
     // Options
   },
+
+  pwa: {
+    manifest: {
+      name: 'Un plat sur la planche',
+      short_name: 'Un plat sur la planche',
+      start_url: '/',
+      display: 'standalone',
+      background_color: '#4A274F',
+      theme_color: '#F0A07C',
+      lang: 'fr',
+    },
+  },
 }

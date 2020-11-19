@@ -20,7 +20,7 @@
         <div class="w-full sm:w-1/2 px-6 sm:px-0 mb-16 sm:mb-0">
           <h2 class="text-primary text-4xl">Des plats savoureux</h2>
           <h3 class="text-secondary text-2xl">Et facile à réaliser</h3>
-          <p class="text-dark-200 mt-8 w-full sm:w-3/5 text-xs">
+          <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-xs">
             Déposez les scones sur une plaque, badigeonnez le dessus de jaune
             d’œuf délayé avec le lait.Faites cuire une vingtaine de minutes,
             jusqu’à ce que les scones soient bien dorés.
@@ -29,11 +29,11 @@
           <div class="flex w-full justify-center sm:justify-start">
             <nuxt-link
               to="/recettes"
-              class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
+              class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
             >
               Découvrez nos recettes
               <svg
-                class="w-6 h-6"
+                class="w-6 h-6 transform -rotate-90"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

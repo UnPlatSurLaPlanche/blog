@@ -1,10 +1,12 @@
 <template>
   <div class="pt-16 mb-40">
-    <div class="flex justify-center mt-20 mb-10 space-x-20">
-      <div class="w-2/6">
+    <div
+      class="flex flex-col sm:flex-row justify-center items-center mt-20 mb-10 space-x-0 sm:space-x-20 space-y-4 sm:space-y-0"
+    >
+      <div class="w-4/5 sm:w-2/6">
         <SearchRecipe />
       </div>
-      <div class="w-1/5">
+      <div class="w-4/5 sm:w-1/5">
         <FilterRecipe />
       </div>
     </div>
@@ -14,11 +16,12 @@
       </h3>
       <div class="flex space-x-4 mt-4">
         <div v-for="tag in tags" :key="tag">
-          <button
-            class="bg-primary bg-opacity-10 text-primary w-full font-semibold py-2 px-3 rounded-lg text-sm focus:outline-none"
+          <nuxt-link
+            :to="`/recettes/tag/${tag}`"
+            class="bg-primary bg-opacity-10 text-primary w-full ring-0 hover:ring-2 transition duration-300 ease-in-out ring-primary font-semibold py-2 px-3 rounded-lg text-sm focus:outline-none"
           >
             {{ tag }}
-          </button>
+          </nuxt-link>
         </div>
       </div>
       <div class="flex flex-wrap w-4/6 mt-10">

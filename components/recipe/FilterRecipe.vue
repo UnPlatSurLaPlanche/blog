@@ -40,7 +40,7 @@
 
       <div
         v-if="isOpen"
-        class="absolute mt-1 w-full rounded-xl shadow-xs bg-white"
+        class="absolute mt-1 w-full rounded-xl ring-1 ring-gray-200 bg-white"
       >
         <ul
           v-for="filter in filters"

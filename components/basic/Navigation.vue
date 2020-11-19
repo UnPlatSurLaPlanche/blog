@@ -11,24 +11,25 @@
           <div
             v-for="link in menus"
             :key="link.name"
-            class="text-dark-200 hover:text-opacity-50"
+            class="text-gray-500 hover:text-opacity-50 transition duration-300 ease-in-out"
           >
             <nuxt-link
               class=""
-              active-class="text-primary hover:text-opacity-50 font-semibold"
+              active-class="text-primary hover:text-opacity-50 font-semibold transition duration-300 ease-in-out"
               :to="link.path"
               :exact="link.path === '/' ? true : false"
             >
               {{ link.name }}
             </nuxt-link>
           </div>
-          <div
-            class="flex items-center p-2 rounded-full bg-primary bg-opacity-25 hover:bg-opacity-50 cursor-pointer"
+          <a
+            href="https://www.instagram.com/unplatsurlaplanche/"
+            class="flex items-center p-2 rounded-full bg-primary bg-opacity-25 hover:bg-opacity-50 transition duration-300 ease-in-out cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20.733 20.728"
-              class="text-tertiary fill-current w-4"
+              class="text-tertiary fill-current w-4 animate-pulse"
             >
               <path
                 id="instagram-brands"
@@ -36,7 +37,7 @@
                 transform="translate(0.075 -31.825)"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <div class="block sm:hidden">
@@ -97,6 +98,7 @@ export default {
         name: "Carnet d'adresses",
         path: '/adresses',
         strict: false,
+        disabled: true,
       },
     ],
   }),

@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bottom-0">
-    <section class="flex justify-center w-full h-40 bg-dark-300">
+    <section class="flex justify-center w-full h-40 bg-gray-800">
       <div class="flex justify-around w-4/5 mt-6">
         <div class="hidden sm:block w-1/5">
           <LogoBlackWhite />
@@ -13,11 +13,11 @@
           <div
             v-for="link in menus"
             :key="link.name"
-            class="text-sm text-white hover:text-opacity-50"
+            class="text-sm text-gray-500 hover:text-opacity-50 transition duration-300 ease-in-out"
           >
             <nuxt-link
               class=""
-              active-class="text-primary hover:text-opacity-50"
+              active-class="text-gray-200 hover:text-opacity-50 transition duration-300 ease-in-out"
               :to="link.path"
               :exact="link.path === '/' ? true : false"
             >
@@ -27,8 +27,9 @@
         </div>
         <div class="flex flex-col items-center w-1/2 sm:w-1/5">
           <h3 class="text-primary font-semibold text-lg">Suivez-nous !</h3>
-          <div
-            class="flex items-center w-10 h-10 p-3 mt-2 rounded-full bg-dark-200 bg-opacity-25 hover:bg-opacity-50 cursor-pointer"
+          <a
+            href="https://www.instagram.com/unplatsurlaplanche/"
+            class="flex items-center w-10 h-10 p-3 mt-2 rounded-full bg-gray-900 bg-opacity-25 hover:bg-opacity-50 transition duration-300 ease-in-out cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,12 +42,12 @@
                 transform="translate(0.075 -31.825)"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </section>
-    <div class="flex justify-center items-center w-full bg-dark-400 h-8">
-      <p class="text-white text-xs text-opacity-25">
+    <div class="flex justify-center items-center w-full bg-gray-900 h-8">
+      <p class="text-white text-xs text-gray-400">
         Mentions légales - Politique de confidentialité
       </p>
     </div>

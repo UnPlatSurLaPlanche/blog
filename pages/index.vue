@@ -1,9 +1,9 @@
 <template>
   <div class="w-full">
-    <div class="relative flex w-full justify-center pt-12">
+    <div class="relative flex w-full justify-center pt-16">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-current text-primary absolute w-5/12 top-0 left-0"
+        class="fill-current text-primary absolute w-3/4 sm:w-5/12 top-0 left-0"
         viewBox="0 0 865.557 850.893"
       >
         <path
@@ -14,35 +14,39 @@
           opacity="0.1"
         />
       </svg>
-      <div class="flex items-center w-4/6 mt-12 z-10">
-        <div class="w-1/2">
+      <div
+        class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 z-10"
+      >
+        <div class="w-full sm:w-1/2 px-6 sm:px-0 mb-16 sm:mb-0">
           <h2 class="text-primary text-4xl">Des plats savoureux</h2>
           <h3 class="text-secondary text-2xl">Et facile à réaliser</h3>
-          <p class="text-dark-200 mt-8 w-3/5 text-xs">
+          <p class="text-dark-200 mt-8 w-full sm:w-3/5 text-xs">
             Déposez les scones sur une plaque, badigeonnez le dessus de jaune
             d’œuf délayé avec le lait.Faites cuire une vingtaine de minutes,
             jusqu’à ce que les scones soient bien dorés.
           </p>
 
-          <button
-            class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg py-3 px-6 shadow-md mt-8"
-          >
-            Découvrez nos recettes
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+          <div class="flex w-full justify-center sm:justify-start">
+            <button
+              class="flex items-center cursor-pointer bg-primary hover:bg-opacity-75 transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
             >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+              Découvrez nos recettes
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-full sm:w-1/2 px-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -57,7 +61,11 @@
                 height="100%"
                 viewBox="0 0 1080 720"
               >
-                <image width="1080" height="720" :href="posts[2].cover" />
+                <image
+                  width="1080"
+                  height="720"
+                  :href="require('~/assets/img/image3.jpg')"
+                />
               </pattern>
               <pattern
                 id="pattern-2"
@@ -66,7 +74,11 @@
                 height="100%"
                 viewBox="0 0 1080 857"
               >
-                <image width="1080" height="720" :href="posts[0].cover" />
+                <image
+                  width="1080"
+                  height="720"
+                  :href="require('~/assets/img/image1.jpg')"
+                />
               </pattern>
               <pattern
                 id="pattern-3"
@@ -75,7 +87,11 @@
                 height="100%"
                 viewBox="0 0 1080 1531"
               >
-                <image width="1080" height="1531" :href="posts[1].cover" />
+                <image
+                  width="1080"
+                  height="1531"
+                  :href="require('~/assets/img/image2.jpg')"
+                />
               </pattern>
             </defs>
             <g
@@ -156,38 +172,14 @@
       </div>
     </div>
     <div class="relative flex w-full justify-center my-12">
-      <div class="flex items-center w-4/6 mt-12">
-        <div v-for="post in posts" :key="post.id" class="w-1/3 px-4">
-          <img
-            :src="post.cover"
-            class="bg-primary object-cover h-40 rounded-xl w-full"
-          />
-          <p class="text-secondary font-semibold mt-2">{{ post.name }}</p>
-          <div class="flex items-center space-x-2">
-            <svg
-              id="Icon_ionic-md-time"
-              data-name="Icon ionic-md-time"
-              xmlns="http://www.w3.org/2000/svg"
-              class="fill-current text-primary w-4 h-4"
-              viewBox="0 0 20.961 20.961"
-            >
-              <path
-                id="Tracé_97"
-                data-name="Tracé 97"
-                d="M13.845,3.375a10.48,10.48,0,1,0,10.491,10.48A10.477,10.477,0,0,0,13.845,3.375Zm.01,18.865a8.384,8.384,0,1,1,8.384-8.384A8.384,8.384,0,0,1,13.855,22.24Z"
-                transform="translate(-3.375 -3.375)"
-              />
-              <path
-                id="Tracé_98"
-                data-name="Tracé 98"
-                d="M18.11,10.688H16.538v6.288l5.5,3.3.786-1.29-4.716-2.8Z"
-                transform="translate(-7.105 -5.447)"
-              />
-            </svg>
-
-            <p class="text-primary">{{ post.times }} min</p>
-          </div>
-        </div>
+      <div
+        class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 space-y-4 sm:space-y-0"
+      >
+        <RecipePreview
+          v-for="recette in recettes"
+          :key="recette.id"
+          :post="recette"
+        />
       </div>
     </div>
   </div>
@@ -196,30 +188,19 @@
 <script>
 export default {
   name: 'Accueil',
-  data: () => ({
-    posts: [
-      {
-        id: 0,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image1.jpg'),
-      },
-      {
-        id: 1,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image2.jpg'),
-      },
-      {
-        id: 2,
-        name: 'Printemps 2019',
-        likes: 323,
-        times: 30,
-        cover: require('~/assets/img/image3.jpg'),
-      },
-    ],
-  }),
+  async asyncData({ $content }) {
+    const recettes = await $content('recettes').fetch()
+    return {
+      recettes,
+    }
+  },
+
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+      ],
+    }
+  },
 }
 </script>

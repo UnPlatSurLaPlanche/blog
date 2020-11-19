@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: master
+
+locale: 'fr'
+logo_url: https://youthful-curie-eca22c.netlify.app/icon.png
+
+publish_mode: editorial_workflow
+media_folder: 'static/images/uploads'
+public_folder: '/images/uploads'
+collections:
+  - name: 'recettes' # Used in routes, e.g., /admin/collections/blog
+    label: 'Recettes' # Used in the UI
+    folder: 'content/recettes' # The path to the folder where the documents are stored
+    format: 'frontmatter'
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Ingrédients', name: 'ingredients', widget: 'markdown' }
+      - label: Étapes
+        name: steps
+        widget: list
+        fields:
+          - { label: Contenu, name: content, widget: markdown }
+          - { label: Image, name: thumbnail, widget: image, required: false }
+      - { label: 'Temps de préparation', name: 'times', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - { label: 'Date de publication', name: 'date', widget: 'datetime' }

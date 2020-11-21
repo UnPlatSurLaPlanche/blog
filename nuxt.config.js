@@ -59,7 +59,7 @@ export default {
       short_name: 'Un plat sur la planche',
       start_url: '/',
       display: 'standalone',
-      background_color: '#F0A07C',
+      background_color: '#FFFFFF',
       theme_color: '#F0A07C',
       lang: 'fr',
     },

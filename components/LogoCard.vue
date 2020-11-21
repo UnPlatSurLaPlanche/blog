@@ -2,8 +2,7 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="858"
-    height="389"
+    class="w-full"
     viewBox="0 0 858 389"
   >
     <defs>

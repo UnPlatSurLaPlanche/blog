@@ -14,11 +14,11 @@
           opacity="0.1"
         />
       </svg>
-      <div class="flex justify-center w-full z-10">
-        <LogoCard class="w-3/4 sm:w-1/3" />
+      <div class="flex justify-center w-3/4 sm:w-1/3 my-10">
+        <LogoCard />
       </div>
     </div>
-    <section class="flex justify-center w-full mt-10">
+    <section class="flex justify-center w-full mt-1 sm:mt-10">
       <div class="w-full sm:w-3/4">
         <PostPreview
           v-for="post in posts"

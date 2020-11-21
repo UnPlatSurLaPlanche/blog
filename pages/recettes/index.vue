@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="flex flex-col items-center justify-center">
-      <h3 class="text-2xl text-secondary">
+      <h3 class="text-2xl text-secondary text-center">
         Découvrez nos recettes, par catégorie
       </h3>
       <div class="flex space-x-4 mt-4">
@@ -24,7 +24,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="flex flex-wrap w-4/6 mt-10">
+      <div class="flex flex-wrap w-full sm:w-4/6 mt-10">
         <RecipePreview
           v-for="post in recepies"
           :key="post.id"

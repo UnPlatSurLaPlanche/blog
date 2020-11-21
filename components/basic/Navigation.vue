@@ -45,6 +45,7 @@
           xmlns="http://www.w3.org/2000/svg"
           class="fill-current text-primary w-8 h-8"
           viewBox="0 0 33.495 28.71"
+          @click="asideToggle()"
         >
           <g id="menu" transform="translate(-3 -4)">
             <path
@@ -77,6 +78,14 @@
 <script>
 export default {
   name: 'Navigation',
+  props: {
+    asideToggle: {
+      type: Function,
+      default() {
+        return {}
+      },
+    },
+  },
   data: () => ({
     menus: [
       {

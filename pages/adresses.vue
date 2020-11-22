@@ -32,9 +32,9 @@
                 to="/recettes"
                 class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
               >
-                Découvrez nos recettes
+                Découvrez nos adresses
                 <svg
-                  class="w-6 h-6 transform -rotate-90"
+                  class="w-6 h-6 transform"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"

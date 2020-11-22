@@ -43,3 +43,15 @@ collections:
       - { label: 'Contenu', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Date de publication', name: 'date', widget: 'datetime' }
+
+  - name: 'addresses'
+    label: 'Adresses'
+    folder: 'content/adresses'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Titre', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Adresse', name: 'address', widget: 'text' }
+      - { label: 'Date de publication', name: 'date', widget: 'datetime' }

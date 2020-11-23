@@ -112,7 +112,7 @@
                   <h4
                     class="bg-primary-light text-primary font-semibold rounded-lg py-1 px-3"
                   >
-                    Étape {{ index }}
+                    Étape {{ index + 1 }}
                   </h4>
                 </div>
                 <p class="whitespace-pre-line text-gray-500">

@@ -15,12 +15,16 @@
         />
       </svg>
 
-      <div class="flex justify-center z-10 mt-10">
+      <div class="flex justify-center z-10 mt-12">
         <div class="w-1/3">
           <div>
-            <h2 class="text-primary text-4xl">Carnet d'adresses</h2>
-            <h3 class="text-secondary text-2xl">À partager sans modération</h3>
-            <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-xs">
+            <h2 class="text-primary text-4xl sm:text-5xl 2xl:text-7-6xl">
+              Carnet d'adresses
+            </h2>
+            <h3 class="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">
+              À partager sans modération
+            </h3>
+            <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-sm">
               Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce
               vieux whisky au juge blond qui fume sur son île intérieure, à côté
               de l"alcôve ovoïde, où les bûches se consument dans l"âtre, ce qui

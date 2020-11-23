@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="flex flex-col items-center justify-center">
-      <h3 class="text-2xl text-secondary text-center">
+      <h3 class="text-2xl sm:text-4xl text-secondary text-center">
         Découvrez nos recettes, par catégorie
       </h3>
       <div class="flex space-x-4 mt-4">

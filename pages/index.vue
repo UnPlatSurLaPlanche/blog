@@ -18,9 +18,13 @@
         class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 z-10"
       >
         <div class="w-full sm:w-1/2 px-6 sm:px-0 mb-16 sm:mb-0">
-          <h2 class="text-primary text-4xl">Des plats savoureux</h2>
-          <h3 class="text-secondary text-2xl">Et facile à réaliser</h3>
-          <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-xs">
+          <h2 class="text-primary text-4xl sm:text-5xl 2xl:text-7-6xl">
+            Des plats savoureux
+          </h2>
+          <h3 class="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">
+            Et facile à réaliser
+          </h3>
+          <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-sm">
             Déposez les scones sur une plaque, badigeonnez le dessus de jaune
             d’œuf délayé avec le lait.Faites cuire une vingtaine de minutes,
             jusqu’à ce que les scones soient bien dorés.

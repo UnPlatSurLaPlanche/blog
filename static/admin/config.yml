@@ -26,7 +26,23 @@ collections:
         widget: list
         fields:
           - { label: Contenu, name: content, widget: markdown }
-      - { label: 'Temps de préparation', name: 'times', widget: 'string' }
+      - {
+          label: 'Image fin de recette',
+          name: 'thumbnail2',
+          widget: 'image',
+          required: false,
+        }
+      - {
+          label: 'Temps de préparation',
+          name: 'preparationtime',
+          widget: 'string',
+        }
+      - {
+          label: 'Temps de cuision',
+          name: 'bakingtime',
+          widget: 'string',
+          required: false,
+        }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Date de publication', name: 'date', widget: 'datetime' }
 

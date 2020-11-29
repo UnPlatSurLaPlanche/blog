@@ -31,7 +31,13 @@
         />
       </svg>
 
-      <p class="text-primary font-semibold">{{ post.times }} min</p>
+      <p class="text-primary font-semibold">
+        Préparation : {{ post.preparationtime || 0 }} min
+      </p>
+
+      <p class="text-primary font-semibold">
+        Cuisson : {{ post.bakingtime || 0 }} min
+      </p>
     </div>
   </nuxt-link>
 </template>

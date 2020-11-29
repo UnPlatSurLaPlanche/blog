@@ -75,6 +75,13 @@
               </svg>
             </div>
 
+            <p class="text-primary font-semibold">
+              Préparation : {{ page.preparationtime || 0 }} min
+            </p>
+
+            <p class="text-primary font-semibold">
+              Cuisson : {{ page.bakingtime || 0 }} min
+            </p>
             <div class="flex my-4 mt-20">
               <h3
                 class="bg-primary-light text-primary font-semibold rounded-xl py-2 px-4"
@@ -120,6 +127,11 @@
                 </p>
               </div>
             </div>
+            <img
+              v-if="page.thumbnail2"
+              class="rounded-2xl w-full object-cover"
+              :src="page.thumbnail2"
+            />
           </div>
         </div>
       </div>
@@ -145,6 +157,16 @@ export default {
       return this.page.ingredients.split('*').filter(function (el) {
         return el
       })
+    },
+  },
+  methods: {
+    includeImage(content) {
+      if (content.includes('/images/uploads/')) {
+        const firstSplit = content.split(' ')[0]
+        return firstSplit.split('(')[1]
+      } else {
+        return false
+      }
     },
   },
 }

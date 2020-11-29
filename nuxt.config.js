@@ -39,7 +39,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     '@nuxt/content',
   ],
 
@@ -53,15 +53,15 @@ export default {
     // Options
   },
 
-  pwa: {
-    manifest: {
-      name: 'Un plat sur la planche',
-      short_name: 'Un plat sur la planche',
-      start_url: '/',
-      display: 'standalone',
-      background_color: '#FFFFFF',
-      theme_color: '#F0A07C',
-      lang: 'fr',
-    },
-  },
+  // pwa: {
+  //   manifest: {
+  //     name: 'Un plat sur la planche',
+  //     short_name: 'Un plat sur la planche',
+  //     start_url: '/',
+  //     display: 'standalone',
+  //     background_color: '#FFFFFF',
+  //     theme_color: '#F0A07C',
+  //     lang: 'fr',
+  //   },
+  // },
 }

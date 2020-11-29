@@ -48,5 +48,7 @@ bakingtime: 1h30
 times: 30 minutes de préparation / 1h30 de cuisson
 tags:
   - hiver
+  - viande
+  - cocotte
 date: 2020-11-29T15:45:51.897Z
 ---

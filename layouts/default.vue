@@ -32,7 +32,7 @@ export default {
 }
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateX(-100vw);
+  transform: translateX(100vw);
   opacity: 0;
 }
 </style>

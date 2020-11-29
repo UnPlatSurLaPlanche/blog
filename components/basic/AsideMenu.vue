@@ -1,5 +1,5 @@
 <template>
-  <section class="left-0 fixed shadow-md z-50 w-full">
+  <section class="flex justify-end right-0 fixed shadow-md z-50 w-full">
     <aside class="w-10/12 h-screen bg-gray-800 shadow-md">
       <div class="flex justify-between p-3">
         <LogoBlackWhite />
@@ -35,7 +35,7 @@
       </div>
     </aside>
     <div
-      class="w-2/12 h-screen bg-gray-800 opacity-50 top-0 right-0 absolute"
+      class="w-2/12 h-screen bg-gray-800 opacity-50 top-0 left-0 absolute"
     ></div>
   </section>
 </template>

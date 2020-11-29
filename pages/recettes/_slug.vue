@@ -39,40 +39,42 @@
               </svg>
             </div>
             <div class="relative">
-              <img
-                class="rounded-2xl w-full object-cover"
-                :src="page.thumbnail"
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 175.553 217.476"
-                class="hidden sm:block w-32 h-32 fill-current text-primary absolute right-0 bottom-0 -mr-20 -mb-20"
-              >
-                <g
-                  id="Groupe_183"
-                  data-name="Groupe 183"
-                  transform="translate(-1504.639 -831.776)"
+              <div class="flex justify-center">
+                <img
+                  class="rounded-2xl w-full sm:w-1/2 object-cover"
+                  :src="page.thumbnail"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 175.553 217.476"
+                  class="hidden sm:block w-32 h-32 fill-current text-primary absolute right-0 bottom-0 mr-32 -mb-20"
                 >
-                  <path
-                    id="Tracé_46"
-                    data-name="Tracé 46"
-                    d="M61.194,10.667a11.708,11.708,0,0,1-2.657,8.591L20.791,64.717A11.751,11.751,0,0,1,2.71,49.7L40.457,4.243a11.748,11.748,0,0,1,20.738,6.423Z"
-                    transform="matrix(-0.777, -0.629, 0.629, -0.777, 1636.793, 923.911)"
-                  />
-                  <path
-                    id="Tracé_47"
-                    data-name="Tracé 47"
-                    d="M68.908,48.413A11.752,11.752,0,0,1,49.7,58.537L4.244,20.791A11.75,11.75,0,1,1,19.254,2.71L64.714,40.457A11.723,11.723,0,0,1,68.908,48.413Z"
-                    transform="matrix(-0.777, -0.629, 0.629, -0.777, 1558.229, 1049.253)"
-                  />
-                  <path
-                    id="Tracé_48"
-                    data-name="Tracé 48"
-                    d="M84.843,10.664A11.75,11.75,0,0,1,74.229,23.45l-61.4,5.691a11.75,11.75,0,0,1-2.168-23.4L72.057.051A11.75,11.75,0,0,1,84.843,10.664Z"
-                    transform="matrix(-0.777, -0.629, 0.629, -0.777, 1648.923, 1000.481)"
-                  />
-                </g>
-              </svg>
+                  <g
+                    id="Groupe_183"
+                    data-name="Groupe 183"
+                    transform="translate(-1504.639 -831.776)"
+                  >
+                    <path
+                      id="Tracé_46"
+                      data-name="Tracé 46"
+                      d="M61.194,10.667a11.708,11.708,0,0,1-2.657,8.591L20.791,64.717A11.751,11.751,0,0,1,2.71,49.7L40.457,4.243a11.748,11.748,0,0,1,20.738,6.423Z"
+                      transform="matrix(-0.777, -0.629, 0.629, -0.777, 1636.793, 923.911)"
+                    />
+                    <path
+                      id="Tracé_47"
+                      data-name="Tracé 47"
+                      d="M68.908,48.413A11.752,11.752,0,0,1,49.7,58.537L4.244,20.791A11.75,11.75,0,1,1,19.254,2.71L64.714,40.457A11.723,11.723,0,0,1,68.908,48.413Z"
+                      transform="matrix(-0.777, -0.629, 0.629, -0.777, 1558.229, 1049.253)"
+                    />
+                    <path
+                      id="Tracé_48"
+                      data-name="Tracé 48"
+                      d="M84.843,10.664A11.75,11.75,0,0,1,74.229,23.45l-61.4,5.691a11.75,11.75,0,0,1-2.168-23.4L72.057.051A11.75,11.75,0,0,1,84.843,10.664Z"
+                      transform="matrix(-0.777, -0.629, 0.629, -0.777, 1648.923, 1000.481)"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
 
             <p class="text-primary font-semibold">
@@ -127,11 +129,13 @@
                 </p>
               </div>
             </div>
-            <img
-              v-if="page.thumbnail2"
-              class="rounded-2xl w-full object-cover"
-              :src="page.thumbnail2"
-            />
+            <div class="flex justify-center">
+              <img
+                v-if="page.thumbnail2"
+                class="rounded-2xl w-full sm:w-1/2 object-cover"
+                :src="page.thumbnail2"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -42,7 +42,10 @@ steps:
 
 
       Servez dans des assiettes creuses, en parsemant le dessus de persil ciselé finement.
-  - content: "![](/images/uploads/pxl_20201129_121118731.jpg)"
+  - content: |-
+      
+
+      ![](/images/uploads/pxl_20201129_121118731.jpg "sauté de porc")
 times: 30 minutes de préparation / 1h30 de cuisson
 tags:
   - hiver

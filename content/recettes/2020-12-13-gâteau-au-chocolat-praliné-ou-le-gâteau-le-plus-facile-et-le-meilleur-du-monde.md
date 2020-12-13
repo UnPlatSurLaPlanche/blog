@@ -1,6 +1,6 @@
 ---
 title: Gâteau au chocolat praliné, ou le gâteau le plus facile et le meilleur du monde
-thumbnail: /images/uploads/thumbnail_pxl_20201213_123751350.jpg
+thumbnail: /images/uploads/pxl_20201213_123751350-1-.jpg
 ingredients: |-
   * une tablette de chocolat praliné nestlé
   * 140 g de beurre salé
@@ -19,7 +19,7 @@ steps:
       micro-onde, deux minutes à 450 Watts. Mettez le mélange dans un saladier.
   - content: Ajoutez la farine, le sucre, les œufs et les amandes effilées, mélangez
       le tout. Versez dans un moule et faites cuire 12 minutes à 200°.
-thumbnail2: /images/uploads/5c09c3e8e695d8b780b08abc2313a12e.0_2.jpg
+thumbnail2: /images/uploads/pxl_20201213_123413560_2.jpg
 preparationtime: 10 minutes
 bakingtime: 12 minutes
 tags:

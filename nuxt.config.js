@@ -63,5 +63,8 @@ export default {
       theme_color: '#F0A07C',
       lang: 'fr',
     },
+    workbox: {
+      enabled: false,
+    },
   },
 }

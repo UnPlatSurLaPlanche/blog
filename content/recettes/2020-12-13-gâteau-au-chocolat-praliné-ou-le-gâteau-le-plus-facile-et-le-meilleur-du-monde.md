@@ -19,7 +19,7 @@ steps:
       micro-onde, deux minutes à 450 Watts. Mettez le mélange dans un saladier.
   - content: Ajoutez la farine, le sucre, les œufs et les amandes effilées, mélangez
       le tout. Versez dans un moule et faites cuire 12 minutes à 200°.
-thumbnail2: /images/uploads/pxl_20201213_123413560_2.jpg
+thumbnail2: /images/uploads/pxl_20201213_123413560_2-min.jpg
 preparationtime: 10 minutes
 bakingtime: 12 minutes
 tags:

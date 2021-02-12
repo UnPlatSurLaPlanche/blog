@@ -1,6 +1,6 @@
 ---
 title: Gâteau au chocolat praliné, ou le gâteau le plus facile et le meilleur du monde
-thumbnail: /images/uploads/pxl_20201213_123751350-1-.jpg
+thumbnail: /images/uploads/gateau-praline-compression.jpg
 ingredients: |-
   * une tablette de chocolat praliné nestlé
   * 140 g de beurre salé

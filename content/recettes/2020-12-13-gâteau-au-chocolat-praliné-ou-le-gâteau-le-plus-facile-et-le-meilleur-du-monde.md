@@ -15,13 +15,15 @@ steps:
       prépare, tellement c'est facile, rapide et délicieux. Je le fais souvent
       pour mes collègues, et à chaque fois c'est une réussite. Et chez vous
       alors, il en reste une miette ?
-  - content: Préchauffez le four à 200°. Faites fondre le chocolat et le beurre au
+  - content:
+      Préchauffez le four à 200°. Faites fondre le chocolat et le beurre au
       micro-onde, deux minutes à 450 Watts. Mettez le mélange dans un saladier.
-  - content: Ajoutez la farine, le sucre, les œufs et les amandes effilées, mélangez
+  - content:
+      Ajoutez la farine, le sucre, les œufs et les amandes effilées, mélangez
       le tout. Versez dans un moule et faites cuire 12 minutes à 200°.
 thumbnail2: /images/uploads/pxl_20201213_123413560_2-min.jpg
-preparationtime: 10 minutes
-bakingtime: 12 minutes
+preparationtime: 10 min
+bakingtime: 12 min
 tags:
   - chocolat
   - gâteau

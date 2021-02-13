@@ -1,11 +1,13 @@
 <template>
   <div class="relative flex items-center">
     <input
+      v-model="valueChange"
       type="search"
       name="serch"
       placeholder="Recherchez une recette"
       class="bg-primary bg-opacity-10 placeholder-primary w-full font-semibold py-5 px-5 pl-16 rounded-xl text-sm focus:outline-none"
     />
+
     <button type="submit" class="absolute ml-4">
       <svg
         class="h-5 w-5 fill-current text-primary"
@@ -19,3 +21,28 @@
     </button>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    filter: {
+      type: String,
+      default() {
+        return null
+      },
+    },
+  },
+  data: () => ({
+    value: null,
+  }),
+  computed: {
+    valueChange: {
+      get() {
+        return this.value
+      },
+      set(e) {
+        this.$emit('update:filter', e)
+      },
+    },
+  },
+}
+</script>

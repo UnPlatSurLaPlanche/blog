@@ -25,9 +25,7 @@
         {{ formatedDate(post.date) }}
       </p>
     </div>
-    <p class="text-gray-500 text-sm">
-      {{ post.address }}
-    </p>
+    <p class="text-gray-500 text-sm" v-html="linkify(post.address)"></p>
   </div>
 </template>
 <script>
@@ -45,6 +43,12 @@ export default {
   methods: {
     formatedDate(date) {
       return format(new Date(date), 'dd/MM/yyyy')
+    },
+    linkify(text) {
+      const regex = /(\b(((https?|file))|www.)[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gi
+      return text.replace(regex, function (url) {
+        return '<a class="text-primary" href="' + url + '">' + url + '</a>'
+      })
     },
   },
 }

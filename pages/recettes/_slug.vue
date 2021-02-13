@@ -77,7 +77,7 @@
               </div>
             </div>
 
-            <div class="flex item-center space-x-3">
+            <div class="flex item-center space-x-3 mt-6">
               <svg
                 id="Capa_1"
                 viewBox="0 0 512 512"
@@ -147,6 +147,12 @@
               <p class="text-primary font-semibold">
                 Cuisson : {{ page.bakingtime || 0 }}
               </p>
+            </div>
+            <div
+              v-if="page.infos"
+              class="mt-20 text-gray-500 leading-relaxed bg-primary-light py-4 px-6 rounded-lg"
+            >
+              <p>{{ page.infos }}</p>
             </div>
             <div class="flex my-4 mt-20">
               <h3

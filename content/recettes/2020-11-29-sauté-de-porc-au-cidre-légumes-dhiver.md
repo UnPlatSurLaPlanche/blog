@@ -43,9 +43,8 @@ steps:
 
       Servez dans des assiettes creuses, en parsemant le dessus de persil ciselé finement.
 thumbnail2: /images/uploads/pxl_20201129_120910786-min.jpg
-preparationtime: "30"
+preparationtime: 30 min
 bakingtime: 1h30
-times: 30 minutes de préparation / 1h30 de cuisson
 tags:
   - hiver
   - viande

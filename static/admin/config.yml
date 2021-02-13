@@ -20,6 +20,12 @@ collections:
     fields:
       - { label: 'Titre', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Informations supplémentaire',
+          name: 'infos',
+          widget: 'markdown',
+          required: false,
+        }
       - { label: 'Ingrédients', name: 'ingredients', widget: 'markdown' }
       - label: Étapes
         name: steps

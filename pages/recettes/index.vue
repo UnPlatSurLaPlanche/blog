@@ -4,10 +4,10 @@
       class="flex flex-col sm:flex-row justify-center items-center mt-20 mb-10 space-x-0 sm:space-x-20 space-y-4 sm:space-y-0"
     >
       <div class="w-4/5 sm:w-2/6">
-        <SearchRecipe />
+        <SearchRecipe :filter.sync="filter" />
       </div>
       <div class="w-4/5 sm:w-1/5">
-        <FilterRecipe />
+        <!-- <FilterRecipe /> -->
       </div>
     </div>
     <div class="flex flex-col items-center justify-center">
@@ -26,7 +26,7 @@
       </div>
       <div class="flex flex-wrap w-full sm:w-4/6 mt-10">
         <RecipePreview
-          v-for="post in recepies"
+          v-for="post in recepiesFiltered"
           :key="post.id"
           :post="post"
           class="w-1/3 my-6"
@@ -47,12 +47,31 @@ export default {
       return item.tags
     })
 
-    const tags = [...new Set([].concat.apply([], recepiesTags))]
+    const tags = [...new Set([].concat.apply([], recepiesTags))].sort()
 
     return {
       recepies,
       tags,
     }
+  },
+  data: () => ({
+    filter: '',
+    recepiesFiltered: [],
+  }),
+  watch: {
+    async filter(filter) {
+      if (!filter) {
+        this.recepiesFiltered = await this.$content('recettes').fetch()
+        return
+      }
+
+      this.recepiesFiltered = await this.$content('recettes')
+        .search('title', filter)
+        .fetch()
+    },
+  },
+  async mounted() {
+    this.recepiesFiltered = await this.$content('recettes').fetch()
   },
 }
 </script>

@@ -16,7 +16,7 @@
       </svg>
 
       <div class="flex justify-center z-10 mt-12">
-        <div class="w-1/3">
+        <div class="w-full sm:w-1/3 px-6 sm:px-0">
           <div>
             <h2 class="text-primary text-4xl sm:text-5xl 2xl:text-7-6xl">
               Carnet d'adresses
@@ -33,7 +33,7 @@
 
             <div class="flex w-full justify-center sm:justify-start">
               <nuxt-link
-                to="/recettes"
+                :to="{ hash: '#adresses' }"
                 class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
               >
                 Découvrez nos adresses
@@ -53,14 +53,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/3">
+        <div class="w-0 sm:w-1/3">
           <LogoCard />
         </div>
       </div>
     </div>
     <div class="flex flex-col items-center justify-center mt-20">
-      <div class="flex flex-wrap w-full sm:w-4/6 mt-10">
-        <div v-for="post in addresses" :key="post" class="w-1/3">
+      <div id="adresses" class="flex flex-wrap w-full sm:w-4/6 mt-10">
+        <div
+          v-for="post in addresses"
+          :key="post"
+          class="w-full xs:w-1/2 sm:w-1/3"
+        >
           <AddressPreview :post="post" />
         </div>
       </div>

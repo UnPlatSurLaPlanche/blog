@@ -178,7 +178,7 @@
     </div>
     <div class="relative flex w-full justify-center my-12">
       <div
-        class="flex flex-col sm:flex-row items-center w-full sm:w-4/6 mt-12 space-y-4 sm:space-y-0"
+        class="flex flex-col sm:flex-row items-start w-full sm:w-4/6 mt-12 space-y-4 sm:space-y-0"
       >
         <RecipePreview
           v-for="recette in recettes"

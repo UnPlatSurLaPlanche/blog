@@ -2,6 +2,8 @@
 title: Sauté de porc au cidre, légumes d'hiver
 thumbnail: /images/uploads/pxl_20201129_120910786-min.jpg
 ingredients: |-
+  Pour 4/5 personnes:
+
   * 600 g de sauté de porc
   * 4 carottes
   * 4 pommes de terre
@@ -17,31 +19,29 @@ ingredients: |-
   * sel et poivre
 steps:
   - content: >-
-      Pour 4/5 personnes :
+      Couper la viande en gros cubes, la mettre dans un saladier et mélanger
+      avec la moutarde.
 
 
-      Coupez la viande en gros cubes, mettez-la dans un saladier et mélangez avec la moutarde.
+      Emincer les oignons.
 
 
-      Emincez les oignons.
-
-
-      Epluchez et coupez tous les légumes (pommes de terre, carottes, champignons, pommes) en gros morceaux.
+      Eplucher et couper tous les légumes (pommes de terre, carottes, champignons, pommes) en gros morceaux.
   - content: >-
-      Versez de l'huile dans une cocotte, et faites-y revenir les morceaux de
-      viande jusqu'à ce qu'ils colorent. Réservez la viande.
+      Verser de l'huile dans une cocotte, et faire revenir les morceaux de
+      viande jusqu'à ce qu'ils colorent. Réserver la viande.
 
 
-      Ajoutez à nouveau de l'huile dans la cocotte, faites revenir les oignons et les lardons. Dès que les oignons deviennent translucides, ajoutez les champignons et faites cuire environ 5 minutes.
+      Ajouter à nouveau de l'huile dans la cocotte, faire revenir les oignons et les lardons. Dès que les oignons deviennent translucides, ajouter les champignons et faire cuire environ 5 minutes.
   - content: >-
-      Ajoutez tous les légumes dans la cocotte, la viande, le thym, le cidre.
-      Salez et poivrez généreusement.
+      Ajouter tous les légumes dans la cocotte, la viande, le thym, le cidre.
+      Saler et poivrer généreusement.
 
 
-      Faites cuire à couvert 1h30, à feu doux. Mélangez de temps en temps. A la fin de la cuisson, ajoutez la crème fraîche puis mélangez.
+      Faire cuire à couvert 1h30, à feu doux. Mélanger de temps en temps. A la fin de la cuisson, ajouter la crème fraîche puis mélanger.
 
 
-      Servez dans des assiettes creuses, en parsemant le dessus de persil ciselé finement.
+      Servir dans des assiettes creuses, en parsemant le dessus de persil ciselé finement.
 thumbnail2: ""
 preparationtime: 30 min
 bakingtime: 1h30

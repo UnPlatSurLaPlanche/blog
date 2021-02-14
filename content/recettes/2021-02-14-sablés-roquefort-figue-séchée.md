@@ -1,6 +1,6 @@
 ---
 title: Sablés roquefort - figue séchée
-thumbnail: /images/uploads/dscn5162_2.jpg
+thumbnail: /images/uploads/screenshot_20210214-184517.png
 infos: Pour changer des olives et des cacahuètes, j'aime bien réaliser des
   sablés pour l'apéritif, ceux-là sont très rapides à faire et la recette est
   tellement facile qu'on la retient tout de suite...

@@ -1,6 +1,6 @@
 ---
 title: Sauté de porc au cidre, légumes d'hiver
-thumbnail: /images/uploads/pxl_20201129_121118731-min.jpg
+thumbnail: /images/uploads/pxl_20201129_120910786-min.jpg
 ingredients: |-
   * 600 g de sauté de porc
   * 4 carottes
@@ -42,7 +42,7 @@ steps:
 
 
       Servez dans des assiettes creuses, en parsemant le dessus de persil ciselé finement.
-thumbnail2: /images/uploads/pxl_20201129_120910786-min.jpg
+thumbnail2: ""
 preparationtime: 30 min
 bakingtime: 1h30
 tags:

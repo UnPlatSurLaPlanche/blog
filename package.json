@@ -23,7 +23,7 @@
     "core-js": "^3.8.3",
     "date-fns": "^2.16.1",
     "netlify-cms-app": "^2.14.21",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.0",
     "postcss": "^8"
   },
   "devDependencies": {

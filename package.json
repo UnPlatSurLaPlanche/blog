@@ -22,7 +22,7 @@
     "commitizen": "^4.2.2",
     "core-js": "^3.8.3",
     "date-fns": "^2.16.1",
-    "netlify-cms-app": "^2.14.21",
+    "netlify-cms-app": "^2.14.26",
     "nuxt": "^2.14.12",
     "postcss": "^8"
   },

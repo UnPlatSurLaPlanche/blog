@@ -4,7 +4,7 @@
       <aside-menu v-if="asideConfig" :aside-toggle="asideToggle"></aside-menu>
     </transition>
 
-    <Navigation class="fixed z-20" :aside-toggle="asideToggle" />
+    <basic-navigation class="fixed z-20" :aside-toggle="asideToggle" />
     <main>
       <Nuxt />
     </main>

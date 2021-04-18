@@ -24,9 +24,11 @@ steps:
       allant au four, et faire cuire une quinzaine de minutes (surveiller la
       cuisson). A la sortie du four, ajouter un peu de fleur de sel sur les
       sablés.
-thumbnail2: /images/uploads/pxl_20210217_122114598.jpg
+thumbnaillist:
+  - thumbnail2: /images/uploads/pxl_20210217_122114598.jpg
 preparationtime: 10 min + 30 min de repos
 bakingtime: 15 min
+thumbnail2: /images/uploads/pxl_20210217_122114598.jpg
 tags:
   - apéritif
   - figue

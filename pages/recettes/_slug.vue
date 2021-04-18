@@ -221,13 +221,28 @@
                 >
                   {{ step.content }}
                 </p>
+                <div
+                  v-for="thumbnail in step.thumbnailStep"
+                  :key="thumbnail"
+                  class="flex justify-center"
+                >
+                  <img
+                    v-if="thumbnail.thumbnailStepPreview"
+                    class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72 element-not-break"
+                    :src="thumbnail.thumbnailStepPreview"
+                  />
+                </div>
               </div>
             </div>
-            <div class="flex justify-center">
+            <div
+              v-for="thumbnail in page.thumbnaillist"
+              :key="thumbnail"
+              class="flex justify-center"
+            >
               <img
-                v-if="page.thumbnail2"
+                v-if="thumbnail.thumbnail2"
                 class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72 element-not-break"
-                :src="page.thumbnail2"
+                :src="thumbnail.thumbnail2"
               />
             </div>
           </div>

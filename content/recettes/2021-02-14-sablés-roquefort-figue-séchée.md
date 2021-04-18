@@ -17,9 +17,11 @@ steps:
   - content: Couper les figues en dés. Dans un saladier, mélanger le beurre, la
       farine, le parmesan, le roquefort, les figues, jusqu'à former une pâte
       lisse et homogène.
-  - content: Former un boudin avec la pâte, filmer et mettre au congélateur au moins
+  - content:
+      Former un boudin avec la pâte, filmer et mettre au congélateur au moins
       trente minutes.
-  - content: Préchauffer le four à 180°. Sortir la pâte du congélateur et couper des
+  - content:
+      Préchauffer le four à 180°. Sortir la pâte du congélateur et couper des
       disques d'un centimètre de hauteur. Disposer les sablés sur une plaque
       allant au four, et faire cuire une quinzaine de minutes (surveiller la
       cuisson). A la sortie du four, ajouter un peu de fleur de sel sur les
@@ -28,7 +30,6 @@ thumbnaillist:
   - thumbnail2: /images/uploads/pxl_20210217_122114598.jpg
 preparationtime: 10 min + 30 min de repos
 bakingtime: 15 min
-thumbnail2: /images/uploads/pxl_20210217_122114598.jpg
 tags:
   - apéritif
   - figue

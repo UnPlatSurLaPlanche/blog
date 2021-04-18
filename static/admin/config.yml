@@ -32,12 +32,24 @@ collections:
         widget: list
         fields:
           - { label: Contenu, name: content, widget: markdown }
-      - {
-          label: 'Image fin de recette',
-          name: 'thumbnail2',
-          widget: 'image',
-          required: false,
-        }
+          - label: Images d'étape
+            name: 'thumbnailStep'
+            widget: 'list'
+            required: false
+            fields:
+              - {
+                  label: Image,
+                  name: thumbnailStepPreview,
+                  widget: image,
+                  required: false,
+                }
+      - label: 'Images fin de recette'
+        name: 'thumbnaillist'
+        widget: 'list'
+        required: false
+        fields:
+          - { label: Image, name: thumbnail2, widget: image, required: false }
+
       - {
           label: 'Temps de préparation',
           name: 'preparationtime',

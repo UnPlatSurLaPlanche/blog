@@ -6,3 +6,9 @@
 .page-leave-to {
   opacity: 0;
 }
+/* 
+@layer utilities {
+  .page-break {
+    page-break-before: always;
+  }
+} */

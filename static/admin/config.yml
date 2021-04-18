@@ -4,7 +4,7 @@ backend:
 editor:
   preview: false
 locale: 'fr'
-logo_url: https://youthful-curie-eca22c.netlify.app/icon.png
+logo_url: https://unplatsurlaplanche.com/icon.png
 
 publish_mode: editorial_workflow
 media_folder: 'static/images/uploads'

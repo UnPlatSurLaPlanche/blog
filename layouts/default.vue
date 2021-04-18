@@ -4,11 +4,14 @@
       <aside-menu v-if="asideConfig" :aside-toggle="asideToggle"></aside-menu>
     </transition>
 
-    <basic-navigation class="fixed z-20" :aside-toggle="asideToggle" />
+    <basic-navigation
+      class="fixed z-20 print:hidden"
+      :aside-toggle="asideToggle"
+    />
     <main>
       <Nuxt />
     </main>
-    <Footer class="z-20 mt-20" />
+    <basic-footer class="z-20 mt-20 print:hidden" />
   </div>
 </template>
 <script>

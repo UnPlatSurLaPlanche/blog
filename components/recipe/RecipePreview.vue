@@ -6,12 +6,12 @@
     <img
       :src="post.thumbnail"
       alt=""
-      class="bg-primary object-cover h-40 rounded-xl w-full"
+      class="bg-primary object-cover h-60 rounded-xl w-full"
     />
     <p class="text-secondary font-semibold mt-2 text-lg line-clamp-2">
       {{ post.title }}
     </p>
-    <div class="flex flex-row space-x-4 mt-2">
+    <div class="flex flex-col space-y-2 mt-2">
       <div class="flex space-x-2 items-center">
         <svg
           id="Capa_1"

@@ -25,9 +25,12 @@
             Et facile à réaliser
           </h3>
           <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-sm">
-            Déposez les scones sur une plaque, badigeonnez le dessus de jaune
-            d’œuf délayé avec le lait.Faites cuire une vingtaine de minutes,
-            jusqu’à ce que les scones soient bien dorés.
+            Retrouvez mes recettes sur instagram:
+            <a
+              href="https://www.instagram.com/unplatsurlaplanche/"
+              class="animate-pulse"
+              >@unplatsurlaplanche</a
+            >
           </p>
 
           <div class="flex w-full justify-center sm:justify-start">

@@ -1,9 +1,9 @@
 <template>
   <div class="w-full">
-    <div class="relative flex w-full justify-center pt-16">
+    <div class="relative flex w-full justify-center pt-16 print:pt-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="fill-current text-primary absolute w-3/4 sm:w-5/12 top-0 right-0"
+        class="fill-current text-primary absolute w-3/4 sm:w-5/12 top-0 right-0 print:hidden"
         viewBox="0 0 977.556 834.44"
       >
         <path
@@ -18,8 +18,10 @@
       <div class="z-10">
         <div class="flex flex-col items-center justify-center w-full px-4">
           <div class="w-full sm:w-2/3">
-            <div class="my-16">
-              <h1 class="text-4xl sm:text-5xl text-secondary text-left">
+            <div class="my-16 print:my-6">
+              <h1
+                class="text-4xl sm:text-5xl text-secondary text-left print:text-3xl"
+              >
                 {{ page.title }}
               </h1>
               <svg
@@ -41,7 +43,7 @@
             <div class="relative">
               <div class="flex justify-center">
                 <img
-                  class="rounded-2xl w-full sm:w-1/2 object-cover"
+                  class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72"
                   :src="page.thumbnail"
                 />
                 <svg
@@ -148,15 +150,35 @@
                 Cuisson : {{ page.bakingtime || 0 }}
               </p>
             </div>
+            <div class="flex my-10 print:hidden">
+              <button
+                class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-2 print:text-2xl print:py-0"
+                @click="printRecipe"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 mr-2 animate-bounce"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 4v3H4a2 2 0 00-2 2v3a2 2 0 002 2h1v2a2 2 0 002 2h6a2 2 0 002-2v-2h1a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span> Imprimer la recette </span>
+              </button>
+            </div>
             <div
               v-if="page.infos"
-              class="mt-20 text-gray-500 leading-relaxed bg-primary-light py-4 px-6 rounded-lg"
+              class="text-gray-500 leading-relaxed bg-primary-light py-4 px-6 rounded-lg print:mt-2 print:italic"
             >
               <p>{{ page.infos }}</p>
             </div>
-            <div class="flex my-4 mt-20">
+            <div class="flex my-4 mt-20 print:mt-2">
               <h3
-                class="bg-primary-light text-primary font-semibold rounded-xl py-2 px-4"
+                class="bg-primary-light text-primary font-semibold rounded-xl py-2 px-4 print:text-2xl print:py-0"
               >
                 Ingrédients
               </h3>
@@ -178,23 +200,25 @@
               </div>
             </div>
 
-            <div class="flex my-4 mt-12">
+            <div class="flex my-4 mt-12 page-break">
               <h3 class="text-gray-500 font-semibold text-xl">Préparation</h3>
             </div>
             <div class="w-full">
               <div
                 v-for="(step, index) in page.steps"
                 :key="index"
-                class="mb-10"
+                class="mb-10 print:mb-6 element-not-break"
               >
                 <div class="flex">
                   <h4
-                    class="bg-primary-light text-primary font-semibold rounded-lg py-1 px-3"
+                    class="bg-primary-light text-primary font-semibold rounded-lg py-1 px-3 print:px-0 print:py-0"
                   >
                     Étape {{ index + 1 }}
                   </h4>
                 </div>
-                <p class="whitespace-pre-line text-gray-500">
+                <p
+                  class="whitespace-pre-line text-gray-500 print:whitespace-normal"
+                >
                   {{ step.content }}
                 </p>
               </div>
@@ -202,7 +226,7 @@
             <div class="flex justify-center">
               <img
                 v-if="page.thumbnail2"
-                class="rounded-2xl w-full sm:w-1/2 object-cover"
+                class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72 element-not-break"
                 :src="page.thumbnail2"
               />
             </div>
@@ -242,6 +266,18 @@ export default {
         return false
       }
     },
+    printRecipe() {
+      window.print()
+    },
   },
 }
 </script>
+<style scoped>
+.page-break {
+  page-break-before: always;
+}
+
+.element-not-break {
+  page-break-inside: avoid;
+}
+</style>

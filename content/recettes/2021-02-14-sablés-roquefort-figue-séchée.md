@@ -17,8 +17,7 @@ steps:
   - content: Couper les figues en dés. Dans un saladier, mélanger le beurre, la
       farine, le parmesan, le roquefort, les figues, jusqu'à former une pâte
       lisse et homogène.
-    thumbnailStep:
-      - thumbnailStepPreview: /images/uploads/pxl_20210217_122114598.jpg
+    thumbnailStep: []
   - content: Former un boudin avec la pâte, filmer et mettre au congélateur au moins
       trente minutes.
   - content: Préchauffer le four à 180°. Sortir la pâte du congélateur et couper des

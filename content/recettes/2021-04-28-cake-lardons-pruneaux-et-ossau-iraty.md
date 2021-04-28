@@ -22,7 +22,7 @@ ingredients: |-
 steps:
   - thumbnailStep:
       - thumbnailStepPreview: /images/uploads/pxl_20210423_074616718.jpg
-    content: /
+    content: .
   - content: Préchauffer le four à 180°. Faire rissoler les lardons jusqu'à ce
       qu'ils soient bien dorés. Couper le fromage en cubes et les pruneaux en
       morceaux.

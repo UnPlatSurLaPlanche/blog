@@ -1,7 +1,10 @@
 <template>
   <div>
     <transition name="slide-fade">
-      <aside-menu v-if="asideConfig" :aside-toggle="asideToggle"></aside-menu>
+      <basic-aside-menu
+        v-if="asideConfig"
+        :aside-toggle="asideToggle"
+      ></basic-aside-menu>
     </transition>
 
     <basic-navigation

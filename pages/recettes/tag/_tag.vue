@@ -5,12 +5,12 @@
         Découvrez nos recettes avec la catégorie :
         <span class="font-bold">{{ tag }}</span>
       </h3>
-      <div class="flex flex-wrap w-4/6 mt-10">
+      <div class="flex flex-wrap w-full sm:w-4/6 mt-10">
         <RecipePreview
           v-for="post in recepies"
           :key="post.id"
           :post="post"
-          class="w-1/3 my-6"
+          class="w-full sm:w-1/3 my-6"
         />
       </div>
     </div>

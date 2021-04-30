@@ -20,11 +20,11 @@
     </div>
     <section class="flex justify-center w-full mt-1 sm:mt-10">
       <div class="w-full sm:w-3/4">
-        <PostPreview
+        <blog-post-preview
           v-for="post in posts"
           :key="post.id"
           :post="post"
-        ></PostPreview>
+        ></blog-post-preview>
       </div>
     </section>
   </div>

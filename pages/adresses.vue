@@ -15,46 +15,50 @@
         />
       </svg>
 
-      <div class="flex justify-center z-10 mt-12">
-        <div class="w-full sm:w-1/3 px-6 sm:px-0">
-          <div>
-            <h2 class="text-primary text-4xl sm:text-5xl 2xl:text-7-6xl">
-              Carnet d'adresses
-            </h2>
-            <h3 class="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">
-              À partager sans modération
-            </h3>
-            <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-sm">
-              Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce
-              vieux whisky au juge blond qui fume sur son île intérieure, à côté
-              de l"alcôve ovoïde, où les bûches se consument dans l"âtre, ce qui
-              lui permet.
-            </p>
+      <div class="w-full sm:w-2/3">
+        <div class="flex justify-between items-center z-10 mt-16">
+          <div class="w-full sm:w-1/2 px-6 sm:px-0">
+            <div
+              class="flex flex-col justify-center text-center sm:text-left w-full"
+            >
+              <h2 class="text-primary text-4xl sm:text-5xl 2xl:text-7-6xl">
+                Carnet d'adresses
+              </h2>
+              <h3 class="text-secondary text-2xl sm:text-3xl 2xl:text-4xl">
+                À partager sans modération
+              </h3>
+              <!-- <p class="text-gray-500 mt-8 w-full sm:w-3/5 text-sm">
+                Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez
+                ce vieux whisky au juge blond qui fume sur son île intérieure, à
+                côté de l"alcôve ovoïde, où les bûches se consument dans l"âtre,
+                ce qui lui permet.
+              </p> -->
 
-            <div class="flex w-full justify-center sm:justify-start">
-              <nuxt-link
-                :to="{ hash: '#adresses' }"
-                class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
-              >
-                Découvrez nos adresses
-                <svg
-                  class="w-6 h-6 transform"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div class="flex w-full justify-center sm:justify-start">
+                <nuxt-link
+                  :to="{ hash: '#adresses' }"
+                  class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </nuxt-link>
+                  Découvrez nos adresses
+                  <svg
+                    class="w-6 h-6 transform"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </nuxt-link>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="w-0 sm:w-1/3">
-          <LogoCard />
+          <div class="w-0 sm:w-1/2">
+            <LogoCard />
+          </div>
         </div>
       </div>
     </div>
@@ -62,7 +66,7 @@
       <div id="adresses" class="flex flex-wrap w-full sm:w-4/6 mt-10">
         <div
           v-for="post in addresses"
-          :key="post"
+          :key="post.slug"
           class="w-full xs:w-1/2 sm:w-1/3"
         >
           <AddressPreview :post="post" />
@@ -76,7 +80,6 @@ export default {
   name: 'Adresses',
   async asyncData({ $content }) {
     const addresses = await $content('adresses').fetch()
-
     return {
       addresses,
     }

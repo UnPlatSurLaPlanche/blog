@@ -4,9 +4,9 @@
       <div class="flex justify-around w-4/5 mt-6">
         <div class="hidden sm:block w-1/5">
           <LogoBlackWhite />
-          <p class="mt-4 text-white text-xs">
+          <!-- <p class="mt-4 text-white text-xs">
             Bien manger c'est le début du bonheur
-          </p>
+          </p> -->
         </div>
         <div class="w-1/2 sm:w-1/5">
           <h3 class="text-primary font-semibold text-lg">Navigation</h3>
@@ -48,7 +48,7 @@
     </section>
     <div class="flex justify-center items-center w-full bg-gray-900 h-8">
       <p class="text-white text-xs text-gray-400">
-        Mentions légales - Politique de confidentialité
+        <!-- Mentions légales - Politique de confidentialité -->
       </p>
     </div>
   </footer>

@@ -4,7 +4,7 @@
       class="flex flex-col sm:flex-row justify-center items-center mt-20 mb-10 space-x-0 sm:space-x-20 space-y-4 sm:space-y-0"
     >
       <div class="w-4/5 sm:w-2/6">
-        <SearchRecipe :filter.sync="filter" />
+        <recipe-search-recipe :filter.sync="filter" />
       </div>
       <div class="w-4/5 sm:w-1/5">
         <!-- <FilterRecipe /> -->

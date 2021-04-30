@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="`/blog/${post.slug}`" class="flex w-full px-4 bg-white">
-    <div class="w-full sm:w-3/5">
+    <section class="w-full sm:w-3/5">
       <p class="text-secondary text-xl sm:text-3xl font-semibold mt-2">
         {{ post.title }}
       </p>
@@ -37,11 +37,12 @@
             />
           </div>
         </div>
-        <div class="sm:flex justify-end hidden">
+        <!-- <div class="sm:flex justify-end hidden">
           <nuxt-link
             :to="`/blog/${post.slug}`"
             class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6"
-            >Lire la suite
+          >
+            <p>Lire la suite</p>
             <svg
               class="w-6 h-6 transform -rotate-90"
               fill="currentColor"
@@ -52,11 +53,13 @@
                 fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                 clip-rule="evenodd"
-              ></path></svg
-          ></nuxt-link>
-        </div>
+              ></path>
+            </svg>
+          </nuxt-link>
+        </div> -->
       </div>
-    </div>
+    </section>
+
     <div class="hidden sm:block sm:w-2/5">
       <img
         :src="post.thumbnail"

@@ -222,8 +222,8 @@
                   {{ step.content }}
                 </p>
                 <div
-                  v-for="thumbnail in step.thumbnailStep"
-                  :key="thumbnail"
+                  v-for="(thumbnail, key) in step.thumbnailStep"
+                  :key="'thumbnail1' + key"
                   class="flex justify-center"
                 >
                   <img
@@ -235,8 +235,8 @@
               </div>
             </div>
             <div
-              v-for="thumbnail in page.thumbnaillist"
-              :key="thumbnail"
+              v-for="(thumbnail, key) in page.thumbnaillist"
+              :key="'thumbnail2' + key"
               class="flex justify-center"
             >
               <img

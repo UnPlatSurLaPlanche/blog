@@ -32,7 +32,7 @@ steps:
 thumbnaillist:
   - thumbnail2: /images/uploads/pxl_20210420_113537305.jpg
 preparationtime: 10 min
-bakingtime: 20 + 20
+bakingtime: 2 fois 20 min
 tags:
   - poireaux
   - gratin

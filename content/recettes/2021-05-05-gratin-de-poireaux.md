@@ -9,7 +9,7 @@ ingredients: |-
   * 15 cl de crème liquide
   * 80 g de parmesan
   * 2 gousses d'ail
-  * thym
+  * 1 c. à café de thym
   * sel et poivre
   * huile d'olive et 20 g de beurre
 steps:
@@ -32,7 +32,7 @@ steps:
 thumbnaillist:
   - thumbnail2: /images/uploads/pxl_20210420_113537305.jpg
 preparationtime: 10 min
-bakingtime: 20 + 20
+bakingtime: 2 fois 20 min
 tags:
   - poireaux
   - gratin

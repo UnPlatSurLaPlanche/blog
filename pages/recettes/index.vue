@@ -14,22 +14,23 @@
       <h3 class="text-2xl sm:text-4xl text-secondary text-center">
         Découvrez nos recettes, par catégorie
       </h3>
-      <div class="flex space-x-4 mt-4">
-        <div v-for="tag in tags" :key="tag">
+      <div class="flex mt-4 flex-wrap sm:flex-nowrap justify-center">
+        <div v-for="tag in tags" :key="tag" class="m-4">
           <nuxt-link
             :to="`/recettes/tag/${tag}`"
-            class="bg-primary bg-opacity-10 text-primary w-full ring-0 hover:ring-2 transition duration-300 ease-in-out ring-primary font-semibold py-2 px-3 rounded-lg text-sm focus:outline-none"
+            class="bg-primary bg-opacity-10 text-primary w-ful ring-0 hover:ring-2 transition duration-300 ease-in-out ring-primary font-semibold py-2 px-3 rounded-lg text-sm focus:outline-none"
           >
             {{ tag }}
           </nuxt-link>
         </div>
       </div>
-      <div class="flex flex-wrap w-full sm:w-4/6 mt-10">
+      <div
+        class="flex flex-col sm:flex-row items-start w-full sm:w-4/6 mt-12 space-y-4 sm:space-y-0"
+      >
         <RecipePreview
           v-for="post in recepiesFiltered"
           :key="post.id"
           :post="post"
-          class="w-1/3 my-6"
         />
       </div>
     </div>
@@ -39,7 +40,7 @@
 export default {
   name: 'Recettes',
   async asyncData({ $content }) {
-    const recepies = await $content('recettes').fetch()
+    const recepies = await $content('recettes').sortBy('date', 'desc').fetch()
 
     const recepiesTags = (
       await $content('recettes').only(['tags']).fetch()

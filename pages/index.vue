@@ -77,7 +77,7 @@
 export default {
   name: 'Accueil',
   async asyncData({ $content }) {
-    const recettes = await $content('recettes').fetch()
+    const recettes = await $content('recettes').sortBy('date', 'desc').fetch()
     return {
       recettes,
     }

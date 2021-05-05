@@ -35,9 +35,9 @@
               </p> -->
 
               <div class="flex w-full justify-center sm:justify-start">
-                <nuxt-link
-                  :to="{ hash: '#adresses' }"
+                <button
                   class="flex items-center cursor-pointer bg-primary ring-0 hover:ring-4 ring-opacity-50 ring-primary transition duration-300 ease-in-out text-white rounded-lg shadow-md py-3 px-6 mt-8"
+                  @click="scrollToContent"
                 >
                   Découvrez nos adresses
                   <svg
@@ -52,7 +52,7 @@
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                </nuxt-link>
+                </button>
               </div>
             </div>
           </div>
@@ -79,10 +79,19 @@
 export default {
   name: 'Adresses',
   async asyncData({ $content }) {
-    const addresses = await $content('adresses').fetch()
+    const addresses = await $content('adresses').sortBy('date', 'desc').fetch()
     return {
       addresses,
     }
+  },
+  methods: {
+    scrollToContent() {
+      setTimeout(() => {
+        document.getElementById('adresses').scrollIntoView({
+          behavior: 'smooth',
+        })
+      }, 200)
+    },
   },
 }
 </script>

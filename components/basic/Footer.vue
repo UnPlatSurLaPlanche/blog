@@ -68,11 +68,11 @@ export default {
         path: '/recettes',
         strict: false,
       },
-      {
-        name: 'Blog',
-        path: '/blog',
-        strict: false,
-      },
+      // {
+      //   name: 'Blog',
+      //   path: '/blog',
+      //   strict: false,
+      // },
       {
         name: "Carnet d'adresses",
         path: '/adresses',

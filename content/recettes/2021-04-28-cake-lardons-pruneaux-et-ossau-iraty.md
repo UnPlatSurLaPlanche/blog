@@ -1,6 +1,6 @@
 ---
 title: Cake lardons, pruneaux et ossau-iraty
-thumbnail: /images/uploads/pxl_20210423_112038005~2.jpg
+thumbnail: /images/uploads/pxl_20210423_112038005_2-min.jpeg
 infos: >-
   Lard et pruneau associés, c'est un peu une madeleine de Proust, alors réunis
   avec un fromage de brebis (mon préféré!) dans un cake, on ne peut pas rêver

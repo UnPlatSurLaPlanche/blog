@@ -1,6 +1,6 @@
 ---
 title: Gratin de poireaux
-thumbnail: /images/uploads/pxl_20210420_113517655.jpg
+thumbnail: /images/uploads/pxl_20210420_113517655.jpeg
 infos: Recette tirée d'un livre de Jamie Oliver, qui réconcilie tout le monde
   avec les poireaux. C'est gourmand et ça change de la sempiternelle fondue (de
   poireaux). Servi avec un filet de poisson blanc, c'est parfait.

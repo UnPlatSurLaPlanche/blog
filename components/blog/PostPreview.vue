@@ -30,10 +30,12 @@
             {{ post.summary }}
           </p>
           <div class="sm:hidden block w-2/5">
-            <img
+            <nuxt-img
               :src="post.thumbnail"
               alt=""
               class="bg-primary object-cover w-40 h-40 rounded-xl"
+              format="webp"
+              quality="80"
             />
           </div>
         </div>
@@ -61,10 +63,12 @@
     </section>
 
     <div class="hidden sm:block sm:w-2/5">
-      <img
+      <nuxt-img
         :src="post.thumbnail"
         alt=""
         class="bg-primary object-cover h-56 rounded-xl"
+        format="webp"
+        quality="80"
       />
     </div>
   </nuxt-link>

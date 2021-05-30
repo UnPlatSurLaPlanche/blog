@@ -1,8 +1,10 @@
 <template>
   <div class="p-8">
-    <img
+    <nuxt-img
       :src="post.thumbnail"
       class="bg-primary object-cover h-48 rounded-xl w-full"
+      format="webp"
+      quality="80"
     />
     <p class="text-secondary font-semibold text-2xl mt-2">
       {{ post.title }}

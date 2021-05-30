@@ -41,9 +41,11 @@
               </svg>
             </div>
             <div class="relative">
-              <img
+              <nuxt-img
                 class="rounded-2xl w-full object-cover"
                 :src="page.thumbnail"
+                format="webp"
+                quality="80"
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +127,7 @@ export default {
   @apply text-2xl;
 }
 
-.nuxt-content img {
+.nuxt-content nuxt-img {
   @apply rounded-xl;
 }
 </style>

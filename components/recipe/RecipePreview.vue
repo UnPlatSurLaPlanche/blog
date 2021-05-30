@@ -3,10 +3,13 @@
     :to="`/recettes/${post.slug}`"
     class="w-full sm:w-1/3 px-4 transform scale-100 hover:opacity-75 opacity-100 sm:hover:opacity-100 sm:hover:scale-110 transition duration-300 ease-in-out"
   >
-    <img
+    <nuxt-img
       :src="post.thumbnail"
       alt=""
       class="bg-primary object-cover h-60 rounded-xl w-full"
+      sizes="sm:100vw md:20vw"
+      format="webp"
+      quality="60"
     />
     <p class="text-secondary font-semibold mt-2 text-lg line-clamp-2">
       {{ post.title }}

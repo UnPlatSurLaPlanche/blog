@@ -42,9 +42,11 @@
             </div>
             <div class="relative">
               <div class="flex justify-center">
-                <img
+                <nuxt-img
                   class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72"
                   :src="page.thumbnail"
+                  format="webp"
+                  quality="80"
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -226,10 +228,12 @@
                   :key="'thumbnail1' + key"
                   class="flex justify-center"
                 >
-                  <img
+                  <nuxt-img
                     v-if="thumbnail.thumbnailStepPreview"
                     class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72 element-not-break"
                     :src="thumbnail.thumbnailStepPreview"
+                    format="webp"
+                    quality="80"
                   />
                 </div>
               </div>
@@ -239,10 +243,12 @@
               :key="'thumbnail2' + key"
               class="flex justify-center"
             >
-              <img
+              <nuxt-img
                 v-if="thumbnail.thumbnail2"
                 class="rounded-2xl w-full sm:w-1/2 object-cover print:w-72 element-not-break"
                 :src="thumbnail.thumbnail2"
+                format="webp"
+                quality="80"
               />
             </div>
           </div>

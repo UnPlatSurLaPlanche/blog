@@ -30,7 +30,7 @@ thumbnaillist:
 preparationtime: 10 min + 30 min de repos
 bakingtime: 15 min
 tags:
-  - apéritif
+  - apéro
   - figue
   - roquefort
   - parmesan

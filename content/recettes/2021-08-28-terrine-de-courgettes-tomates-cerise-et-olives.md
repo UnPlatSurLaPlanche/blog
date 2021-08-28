@@ -35,7 +35,7 @@ steps:
     thumbnailStep:
       - thumbnailStepPreview: /images/uploads/pxl_20210824_083958137.jpg
 thumbnaillist:
-  - thumbnail2: /images/uploads/pxl_20210825_092605518_2.jpg
+  - thumbnail2: /images/uploads/pxl_20210825_092232521.jpg
 preparationtime: 20 min + 3h de repos
 bakingtime: 40 min
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Terrine de courgettes, tomates cerise et olives
-thumbnail: /images/uploads/pxl_20210825_093218668.jpg
+thumbnail: /images/uploads/pxl_20210825_093218668-1-.jpg
 infos: Une terrine végétarienne délicieuse en été, en tranches généreuses pour
   un pique-nique, ou coupées en morceaux pour un apéro...
 ingredients: |-

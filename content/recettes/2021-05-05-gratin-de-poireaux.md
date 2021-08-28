@@ -32,9 +32,9 @@ steps:
 thumbnaillist:
   - thumbnail2: /images/uploads/pxl_20210420_113537305.jpg
 preparationtime: 10 min
-bakingtime: 2 fois 20 min
+bakingtime: 2 x 20 min
 tags:
-  - poireaux
+  - poireau
   - gratin
   - parmesan
 date: 2021-05-05T15:45:45.723Z

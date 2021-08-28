@@ -45,5 +45,7 @@ tags:
   - pruneaux
   - fromage
   - lardons
+  - apéro
+  - pique-nique
 date: 2021-04-28T14:24:38.120Z
 ---

@@ -37,6 +37,5 @@ preparationtime: 10 min
 bakingtime: 10 min
 tags:
   - apéro
-  - chèvre
 date: 2021-08-30T14:55:58.276Z
 ---

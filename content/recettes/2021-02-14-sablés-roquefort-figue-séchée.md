@@ -31,9 +31,5 @@ preparationtime: 10 min + 30 min de repos
 bakingtime: 15 min
 tags:
   - apéro
-  - figue
-  - roquefort
-  - parmesan
-  - sablés
 date: 2021-02-14T16:55:25.056Z
 ---

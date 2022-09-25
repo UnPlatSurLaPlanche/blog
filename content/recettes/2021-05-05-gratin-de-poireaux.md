@@ -34,8 +34,6 @@ thumbnaillist:
 preparationtime: 10 min
 bakingtime: 2 x 20 min
 tags:
-  - poireau
   - gratin
-  - parmesan
 date: 2021-05-05T15:45:45.723Z
 ---

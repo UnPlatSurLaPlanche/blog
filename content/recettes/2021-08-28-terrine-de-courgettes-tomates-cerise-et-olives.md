@@ -40,10 +40,6 @@ preparationtime: 20 min + 3h de repos
 bakingtime: 40 min
 tags:
   - cake
-  - courgette
-  - parmesan
-  - olive
-  - tomate
   - apéro
   - pique-nique
 date: 2021-08-28T10:57:09.656Z

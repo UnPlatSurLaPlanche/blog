@@ -42,9 +42,6 @@ preparationtime: 20 min
 bakingtime: 45 min
 tags:
   - cake
-  - pruneaux
-  - fromage
-  - lardons
   - apéro
   - pique-nique
 date: 2021-04-28T14:24:38.120Z
